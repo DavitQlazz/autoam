@@ -1,6 +1,5 @@
 package elements;
 
-import org.assertj.core.api.SoftAssertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utils.BaseUtils;
@@ -9,20 +8,23 @@ import java.util.List;
 
 public class Elements extends BaseUtils {
     private final List<WebElement> els;
-    private final SoftAssertions soft;
+    private final By by;
 
     public Elements(final By by) {
-        this.els = waitingAll(by);
-        soft = new SoftAssertions();
+        this.by = by;
+        this.els = waitAll(by);
     }
 
     public static Elements findAll(By by) {
         return new Elements(by);
     }
 
-    public void allContain(String text) {
-        els.forEach(el -> soft.assertThat(el.getText()).contains(text));
-        soft.assertAll();
+    public List<WebElement> all() {
+        return els;
+    }
+
+    public Integer count() {
+        return els.size();
     }
 
 }

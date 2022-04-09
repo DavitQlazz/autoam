@@ -4,6 +4,7 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.assertj.core.api.SoftAssertions;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,6 +14,8 @@ public class SetUp {
 
     public static final ThreadLocal<WebDriver> DRIVERS =
             ThreadLocal.withInitial(SetUp::createChromeDriver);
+    public static final ThreadLocal<SoftAssertions> SOFT =
+            ThreadLocal.withInitial(SoftAssertions::new);
 
     @Before
     public static void before(Scenario scenario) {
@@ -29,7 +32,7 @@ public class SetUp {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions().setHeadless(false);
         ChromeDriver chromeDriver = new ChromeDriver(options);
-        chromeDriver.manage().window().setSize(new Dimension(1600, 900));
+        chromeDriver.manage().window().setSize(new Dimension(1400, 900));
         return chromeDriver;
     }
 }

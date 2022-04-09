@@ -5,12 +5,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import utils.BaseUtils;
 
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+
 
 public class Element extends BaseUtils {
     private final WebElement el;
 
     public Element(final By by) {
-        this.el = waitingElement(by);
+        this.el = waitElement(by);
     }
 
     public static Element find(By by) {
@@ -30,6 +32,11 @@ public class Element extends BaseUtils {
         return this;
     }
 
+    public Element waitForText(String text) {
+        waitText(el, text);
+        return this;
+    }
+
     public String text() {
         return el.getText();
     }
@@ -38,4 +45,8 @@ public class Element extends BaseUtils {
         new Select(el).selectByVisibleText(price);
     }
 
+    public void containsPositiveInteger() {
+        assertThat(Integer.parseInt(el.getText().split(" ")[1]))
+                .isPositive();
+    }
 }
