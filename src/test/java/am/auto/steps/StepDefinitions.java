@@ -1,14 +1,19 @@
 package am.auto.steps;
 
 import elements.HomePageElements;
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
 
 import static elements.Element.find;
 import static elements.Elements.findAll;
 import static hooks.SetUp.SOFT;
+import static java.util.stream.Collectors.toList;
 import static utils.BaseUtils.open;
 
 public class StepDefinitions extends HomePageElements {
@@ -40,17 +45,17 @@ public class StepDefinitions extends HomePageElements {
         SOFT.get().assertAll();
     }
 
-    @When("I set the upper bound of price to {string} dollars")
-    public void iSetTheUpperBoundOfPriceToDollars(String price) {
-        find(priceMaxFilter).selectByText(price);
+    @When("I set the upper bound of price to {int} dollar")
+    public void iSetTheUpperBoundOfPriceToDollars(Integer price) {
+        find(priceMaxFilter).selectByText("$" + price);
     }
 
-    @Then("the count of items appeared on blue button")
+    @Then("the count of items should appear on the blue button")
     public void theCountOfItemsAppearedOnBlueButton() {
         find(applyButton).containsPositiveInteger();
     }
 
-    @When("I open the last page")
+    @When("I navigate to the search result last page")
     public void iOpenTheLastPage() {
         String text = find(lastPage).text();
         find(lastPage)
@@ -65,6 +70,20 @@ public class StepDefinitions extends HomePageElements {
         int lastPageItemCount = findAll(priceTag).count();
         int pageCount = Integer.parseInt(find(activePage).text());
         SOFT.get().assertThat(50 * (pageCount - 1) + lastPageItemCount).isEqualTo(itemCount);
+        SOFT.get().assertAll();
+    }
+
+    @Then("price of all the items in the search results should be less than {int} dollar")
+    public void priceOfAllTheProductsInTheSearchResultsShouldBeLessThan(Integer price) {
+        List<Integer> tags = findAll(priceTag)
+                .all()
+                .stream()
+                .map(WebElement::getText)
+                .takeWhile(el -> el.contains("$"))
+                .mapToInt(s -> Integer.parseInt(s.replaceAll("[\\D]", "")))
+                .boxed()
+                .collect(toList());
+        tags.forEach(i -> SOFT.get().assertThat(i).isLessThanOrEqualTo(price));
         SOFT.get().assertAll();
     }
 }
