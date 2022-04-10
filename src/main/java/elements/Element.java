@@ -23,18 +23,13 @@ public class Element extends BaseUtils {
         el.click();
     }
 
-    public void type(String str) {
-        el.sendKeys(str);
-    }
-
     public Element scrollTo() {
         scrollTo(el);
         return this;
     }
 
-    public Element waitForText(String text) {
+    public void waitForText(String text) {
         waitText(el, text);
-        return this;
     }
 
     public String text() {

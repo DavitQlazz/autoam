@@ -17,11 +17,9 @@ public class HomePageElements {
     protected final By applyButton = By.cssSelector("#research-btn");
     protected final By searchButton = By.cssSelector("#search-btn");
 
-
     protected final By lastPage = By.cssSelector(".waves-effect.clickable.fl");
     protected final By activePage = By.cssSelector("ul[class='pagination center'] li[class='active']");
     protected final By priceTag = By.cssSelector(".price.bold.blue-text");
 
-    protected final By about = By.cssSelector("a[href='/hy/about']");
 
 }

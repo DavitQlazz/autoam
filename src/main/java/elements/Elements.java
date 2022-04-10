@@ -8,10 +8,8 @@ import java.util.List;
 
 public class Elements extends BaseUtils {
     private final List<WebElement> els;
-    private final By by;
 
     public Elements(final By by) {
-        this.by = by;
         this.els = waitAll(by);
     }
 
