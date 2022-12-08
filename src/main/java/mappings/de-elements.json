@@ -1,0 +1,3307 @@
+{
+  "action": {
+    "buttons": {
+      "cancel": {
+        "locator": "by.id(\"selenium-test-cancel\")"
+      },
+      "confirm": {
+        "locator": "by.id(\"selenium-test-confirm\")"
+      }
+    }
+  },
+  "affidavits": {
+    "actions": {
+      "compliance checked": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000026\")"
+      },
+      "submit": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000025\")"
+      }
+    },
+    "document": {
+      "add document": {
+        "locator": "by.id(\"selenium-test-affidavitDocuments-Add\")"
+      },
+      "add signed copy": {
+        "locator": "by.id(\"selenium-test-affidavitSignedCopyDocuments-Add\")"
+      },
+      "attach document": {
+        "locator": "by.id(\"selenium-test-add-new-action-button-affidavitDocuments\")"
+      },
+      "attach signed copy": {
+        "locator": "by.id(\"add-new-document-affidavitSignedCopyDocuments-button-id\")"
+      },
+      "table": {
+        "locator": "by.id(\"ejustice-documents-table-affidavitDocuments\")"
+      }
+    },
+    "general": {
+      "affidavit date": {
+        "locator": "by.id(\"selenium-test-affidavitDate\")"
+      },
+      "commissioner of oaths": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-commissionerOfOaths']//input\")"
+      },
+      "created by": {
+        "locator": "by.id(\"selenium-test-createdbyId\")"
+      },
+      "created on behalf of": {
+        "locator": "by.id(\"selenium-test-createdbyId\")"
+      },
+      "date of action": {
+        "locator": "by.id(\"selenium-test-date-time-date\")"
+      },
+      "date time document served": {
+        "locator": "by.id(\"selenium-test-dateTimeDocumentServed-date\")"
+      },
+      "delivery method": {
+        "locator": "by.id(\"selenium-test-deliveryMethodId\")"
+      },
+      "details": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-details']//textarea\")"
+      },
+      "location": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-location']//input\")"
+      },
+      "notes": {
+        "locator": "by.id(\"selenium-test-Notes\")"
+      },
+      "party": {
+        "locator": "by.id(\"selenium-test-affidavitParties\")"
+      },
+      "persons document served on": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-personsDocumentServedOn']//input\")"
+      },
+      "related document type": {
+        "locator": "by.id(\"selenium-test-relatedDocumentTypeId\")"
+      },
+      "select sub-type": {
+        "locator": "by.id(\"selenium-test-select-entity-sub-type\")"
+      },
+      "select type": {
+        "locator": "by.id(\"selenium-test-select-entity-type\")"
+      },
+      "sworn date": {
+        "locator": "by.id(\"selenium-test-swornDate\")"
+      },
+      "title": {
+        "locator": "by.id(\"selenium-test-Title\")"
+      },
+      "type": {
+        "locator": "by.id(\"selenium-test-TypeID\")"
+      }
+    }
+  },
+  "applications": {
+    "actions": {
+      "compliance checked - approve": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000023\")"
+      },
+      "submit": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000022\")"
+      }
+    },
+    "document": {
+      "add document": {
+        "locator": "by.id(\"selenium-test-applicationDocuments-Add\")"
+      },
+      "add signed copy": {
+        "locator": "by.id(\"selenium-test-applicationSignedCopyDocuments-Add\")"
+      },
+      "attach document": {
+        "locator": "by.id(\"selenium-test-add-new-action-button-applicationDocuments\")"
+      },
+      "attach signed copy": {
+        "locator": "by.id(\"add-new-document-applicationSignedCopyDocuments-button-id\")"
+      },
+      "table": {
+        "locator": "by.id(\"ejustice-documents-table-applicationDocuments\")"
+      },
+      "zw table": {
+        "locator": "by.id(\"zw-documents-table-applicationDocuments\")"
+      }
+    },
+    "general": {
+      "address of service": {
+        "locator": "by.id(\"selenium-test-addressofServiceId\")"
+      },
+      "annexed items": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-annexedItems']//textarea\")"
+      },
+      "appeal also against sentence": {
+        "locator": "by.id(\"selenium-test-appealalsoagainstSentence\")"
+      },
+      "applicant applies to be legally represented at the hearing": {
+        "locator": "by.id(\"selenium-test-applicantAppliestobeLegallyRepresentedattheHearing\")"
+      },
+      "applicant applies to be present personally at the hearing": {
+        "locator": "by.id(\"selenium-test-applicantAppliestobePresentPersonallyattheHearing\")"
+      },
+      "applicant does not apply to be legally represented at the hearing": {
+        "locator": "by.id(\"selenium-test-applicantdoesnotApplytobeLegallyRepresentedattheHearing\")"
+      },
+      "applicant does not apply to be present at the hearing": {
+        "locator": "by.id(\"selenium-test-applicantdoesnotApplytobePresentattheHearing\")"
+      },
+      "applicant is in custody": {
+        "locator": "by.id(\"selenium-test-applicantisincustody\")"
+      },
+      "applicant is to be legally represented at the hearing of the application": {
+        "locator": "by.id(\"selenium-test-applicantistobeLegallyRepresentedattheHearingoftheApplication\")"
+      },
+      "applicant submits herewith written argument": {
+        "locator": "by.id(\"selenium-test-applicantSubmitsHerewithWrittenArgument\")"
+      },
+      "applicant wishes to appear personally": {
+        "locator": "by.id(\"selenium-test-applicantWishestoAppearPersonally\")"
+      },
+      "application date": {
+        "locator": "by.id(\"selenium-test-applicationDate\")"
+      },
+      "application grounds": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-applicationGrounds']//textarea\")"
+      },
+      "basis of application": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-basisOfApplication']//textarea\")"
+      },
+      "created on behalf of": {
+        "locator": "by.id(\"selenium-test-createdbyId\")"
+      },
+      "date of conviction": {
+        "locator": "by.id(\"selenium-test-dateofConviction\")"
+      },
+      "date of referral": {
+        "locator": "by.id(\"selenium-test-dateOfReferral\")"
+      },
+      "date of refusal of leave to appeal by lower court": {
+        "locator": "by.id(\"selenium-test-dateofrefusalofleavetoappealbylowercourt\")"
+      },
+      "grounds of appeal": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-groundsofAppeal']//textarea\")"
+      },
+      "grounds of application": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-groundsofAppeal']//textarea\")"
+      },
+      "in receipt of allowances": {
+        "locator": "by.id(\"selenium-test-inReceiptofAllowances\")"
+      },
+      "in respect of a legal practitioner to appear for me at the hearing of the appeal": {
+        "locator": "by.id(\"selenium-test-inRespectOfLegalPractitionerToAppearForMeAtHearingOfAppeal\")"
+      },
+      "in respect of the preparation of the record on appeal": {
+        "locator": "by.id(\"selenium-test-inRespectOfThePreparationOfTheRecordOnAppeal\")"
+      },
+      "leave to appeal granted": {
+        "locator": "by.id(\"selenium-test-leaveToAppealGrantedId\")"
+      },
+      "leave to appeal granted on": {
+        "locator": "by.id(\"selenium-test-leaveToAppealGrantedOn\")"
+      },
+      "legal aid type": {
+        "locator": "by.id(\"selenium-test-legalAidTypeId\")"
+      },
+      "monthly living expenses": {
+        "locator": "by.id(\"selenium-test-monthlyLivingExpenses\")"
+      },
+      "no notice is required because": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-NoNoticeIsRequiredBecause']//textarea\")"
+      },
+      "notice of appeal leave to appeal": {
+        "locator": "by.id(\"selenium-test-noticeofAppealLeavetoAppealId\")"
+      },
+      "number of pages": {
+        "locator": "by.id(\"selenium-test-numberofPages\")"
+      },
+      "number of supported dependents": {
+        "locator": "by.id(\"selenium-test-numberofSupportedDependents\")"
+      },
+      "offence": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-offence']//input\")"
+      },
+      "oppose within days": {
+        "locator": "by.id(\"selenium-test-opposeWithinDays\")"
+      },
+      "order": {
+        "locator": "by.id(\"selenium-test-applicationOrder\")"
+      },
+      "order granted date": {
+        "locator": "by.id(\"selenium-test-orderGrantedDate\")"
+      },
+      "other property or means": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-otherPropertyorMeans']//textarea\")"
+      },
+      "particulars of allowances": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-particularsofAllowances']//textarea\")"
+      },
+      "party": {
+        "locator": "by.id(\"selenium-test-applicationParties\")"
+      },
+      "present income": {
+        "locator": "by.id(\"selenium-test-presentIncome\")"
+      },
+      "prison address": {
+        "locator": "by.id(\"selenium-test-prisonAddress\")"
+      },
+      "prosecutor-general intends": {
+        "locator": "by.id(\"selenium-test-prosecutorGeneralIntendsId\")"
+      },
+      "purpose": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-purpose']//input\")"
+      },
+      "question referred": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-QuestionReferred']//textarea\")"
+      },
+      "select type": {
+        "locator": "by.id(\"selenium-test-select-entity-type\")"
+      },
+      "sentence": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-sentence']//input\")"
+      },
+      "signed user": {
+        "locator": "by.id(\"selenium-test-judicialOfficerRegistrarClerkofCourtId\")"
+      },
+      "signed user position": {
+        "locator": "by.id(\"selenium-test-signedUserPositionId\")"
+      },
+      "the applicant wishes to": {
+        "locator": "by.id(\"selenium-test-timeExtensionActionTypeId\")"
+      },
+      "the factual basis of urgency grounds of urgency": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-TheFactualBasisOfUrgencyGroundsOfUrgency']//textarea\")"
+      },
+      "the legal basis or grounds of urgency": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-TheBasisOrGroundsOfUrgency']//textarea\")"
+      },
+      "the nature of relief sought": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-theNatureofReliefSought']//textarea\")"
+      },
+      "urgent chamber application for": {
+        "locator": "by.id(\"selenium-test-urgentChamberApplicationForId\")"
+      }
+    }
+  },
+  "case": {
+    "actions": {
+      "compliance to the rules checked - approve": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000017\")"
+      },
+      "decision pronounced": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000098\")"
+      },
+      "judge(s) allocated": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000122\")"
+      },
+      "matter set down for hearing": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000095\")"
+      },
+      "matter under hearing": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000096\")"
+      },
+      "pending decision pronouncement": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000097\")"
+      },
+      "pending for appellant applicant heads of argument": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000209\")"
+      },
+      "pending for judge allocation": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000213\")"
+      },
+      "pending for raised query": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000237\")"
+      },
+      "pending for record submission": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000104\")"
+      },
+      "pending for respondent heads of argument": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000210\")"
+      },
+      "pending with judge(s)": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000238\")"
+      },
+      "stamp fees paid - register": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000062\")"
+      },
+      "submit": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000014\")"
+      }
+    },
+    "advocates": {
+      "add": {
+        "locator": "by.id(\"zw-advocate-add-button-id\")"
+      },
+      "add to case": {
+        "locator": "by.id(\"selenium-test-confirmed\")"
+      },
+      "odpp case number": {
+        "locator": "by.id(\"selenium-test-ODPPCaseNumber\")"
+      },
+      "police case number": {
+        "locator": "by.id(\"selenium-test-police-case-number\")"
+      },
+      "police officer": {
+        "locator": "by.id(\"selenium-test-police-officer\")"
+      },
+      "police station": {
+        "locator": "by.id(\"zw-police-station-Id\")"
+      },
+      "search": {
+        "locator": "by.id(\"selenium-test-search\")"
+      },
+      "searched result table": {
+        "locator": "by.id(\"selenium-test-originating-case-table\")"
+      },
+      "state attorney prosecution office": {
+        "locator": "by.id(\"selenium-test-state-attorney-prosecution-office\")"
+      },
+      "table": {
+        "locator": "by.id(\"case-advocates-table-id\")"
+      }
+    },
+    "assigned court staff": {
+      "add": {
+        "locator": "by.id(\"selenium-test-caseBenchMemberspopupAdd\")"
+      },
+      "allocation date": {
+        "locator": "by.id(\"selenium-test-allocationDate-date\")"
+      },
+      "assigned assistant registrar": {
+        "locator": "by.id(\"selenium-test-assignedAssistingRegistrarId\")"
+      },
+      "assigned clerks secretary assistants": {
+        "locator": "by.id(\"selenium-test-clerksSecretaryId\")"
+      },
+      "assigned judge": {
+        "locator": "by.id(\"selenium-test-assignedJudgeId\")"
+      },
+      "assigned researcher": {
+        "locator": "by.id(\"selenium-test-assignedResearcherId\")"
+      },
+      "cancel": {
+        "locator": "by.id(\"selenium-test-caseBenchMembers-Cancel\")"
+      },
+      "chief justice judge president senior judge": {
+        "locator": "by.id(\"selenium-test-judgePresidentSeniorJudgeId\")"
+      },
+      "confirm": {
+        "locator": "by.id(\"selenium-test-caseBenchMembers-Add\")"
+      },
+      "discharge date": {
+        "locator": "by.id(\"selenium-test-dischargeDate-date\")"
+      },
+      "discharge reason": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-dischargeReason']//input\")"
+      },
+      "judge name": {
+        "locator": "by.id(\"selenium-test-judgeNameId\")"
+      },
+      "registrar deputy registrar": {
+        "locator": "by.id(\"selenium-test-registrarId\")"
+      },
+      "senior researcher": {
+        "locator": "by.id(\"selenium-test-seniorResearcherId\")"
+      },
+      "table": {
+        "locator": "by.id(\"selenium-test-caseBenchMembers\")"
+      },
+      "three dots": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-caseBenchMembers']/tbody/tr/td[6]/button\")"
+      }
+    },
+    "case notes": {
+      "add": {
+        "locator": "by.id(\"selenium-test-caseNotes-add\")"
+      },
+      "date added": {
+        "locator": "by.id(\"selenium-test-caseNotes--1-1\")"
+      },
+      "note": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-caseNotes--1-0']//textarea\")"
+      },
+      "table": {
+        "locator": "by.id(\"selenium-test-caseNotes\")"
+      }
+    },
+    "directions from chief justice": {
+      "add": {
+        "locator": "by.id(\"selenium-test-directionsFromChiefJusticepopupAdd\")"
+      },
+      "cancel": {
+        "locator": "by.id(\"selenium-test-directionsFromChiefJustice-Cancel\")"
+      },
+      "confirm": {
+        "locator": "by.id(\"selenium-test-directionsFromChiefJustice-Add\")"
+      },
+      "direction": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-direction']//textarea\")"
+      },
+      "document": {
+        "locator": "by.id(\"selenium-test-document\")"
+      },
+      "table": {
+        "locator": "by.id(\"selenium-test-directionsFromChiefJustice\")"
+      }
+    },
+    "documents": {
+      "add": {
+        "locator": "by.id(\"selenium-test-add-new-action-button-caseDocuments\")"
+      },
+      "confirm": {
+        "locator": "by.id(\"selenium-test-caseDocuments-Add\")"
+      },
+      "description": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-description']//textarea\")"
+      },
+      "document 1": {
+        "locator": "by.id(\"\")"
+      },
+      "document 2": {
+        "locator": "by.xpath(\"(//*[@id='selenium-test-attachmentId'])[2]\")"
+      },
+      "document type": {
+        "locator": "by.id(\"document-type-select\")"
+      },
+      "language": {
+        "locator": "by.id(\"selenium-test-languageId\")"
+      },
+      "signed copy": {
+        "locator": "by.id(\"selenium-test-attachmentSignedCopyId\")"
+      },
+      "table": {
+        "locator": "by.id(\"ejustice-documents-table-caseDocuments\")"
+      },
+      "title": {
+        "locator": "by.id(\"selenium-test-title\")"
+      }
+    },
+    "general": {
+      "allocated judge magistrate full name": {
+        "locator": "by.id(\"selenium-test-AllocatedJudgeMagistrateFullName\")"
+      },
+      "assigned registrar magistrate": {
+        "locator": "by.id(\"selenium-test-AssignedRegistrarMagistrateID\")"
+      },
+      "case application number": {
+        "locator": "by.id(\"selenium-test-CaseNumber\")"
+      },
+      "case category": {
+        "locator": "by.id(\"selenium-test-case-category\")"
+      },
+      "case category label": {
+        "locator": "by.xpath(\"(//label[@class='ng-star-inserted'])[1]\")"
+      },
+      "case nature": {
+        "locator": "by.id(\"selenium-test-caseNatureId\")"
+      },
+      "case number": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-originating-case-number']//input\")"
+      },
+      "case outcome": {
+        "locator": "by.id(\"selenium-test-case-outcome\")"
+      },
+      "case priority": {
+        "locator": "by.id(\"selenium-test-CasePriorityID\")"
+      },
+      "case sub-category": {
+        "locator": "by.id(\"selenium-test-case-sub-category\")"
+      },
+      "case subtype": {
+        "locator": "by.id(\"selenium-test-CaseSubTypeID\")"
+      },
+      "case summary": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-caseSummary']//textarea\")"
+      },
+      "cause of action": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-subjectMetter']//input\")"
+      },
+      "checklist": {
+        "locator": "by.id(\"zw-checklist-item-table\")"
+      },
+      "court": {
+        "locator": "by.id(\"selenium-test-courtId\")"
+      },
+      "court level": {
+        "locator": "by.id(\"selenium-test-courtLevelId\")"
+      },
+      "court registry": {
+        "locator": "by.id(\"active-court-registry-combo-box-courtRegistryId\")"
+      },
+      "court registry label": {
+        "locator": "by.xpath(\"(//span[@class='ng-star-inserted'])[1]\")"
+      },
+      "create new party": {
+        "locator": "by.id(\"selenium-test-public-party-create-new\")"
+      },
+      "current date": {
+        "locator": "by.className(\"mat-calendar-body-cell-content mat-calendar-body-today\")"
+      },
+      "date of record of proceedings received": {
+        "locator": "by.id(\"selenium-test-dateRecordProceedingsReceived\")"
+      },
+      "division": {
+        "locator": "by.id(\"selenium-test-divisionId\")"
+      },
+      "filing date": {
+        "locator": "by.id(\"selenium-test-FilingDate-date\")"
+      },
+      "filing date time": {
+        "locator": "by.id(\"sis-time-picker-selenium-test-FilingDate-time\")"
+      },
+      "ground of claim": {
+        "locator": "by.id(\"zw_ground_of_claim\")"
+      },
+      "instance level": {
+        "locator": "by.id(\"applicable-instance-level-select-instanceLevelId\")"
+      },
+      "judge": {
+        "locator": "by.id(\"selenium-test-originatingCaseJudge\")"
+      },
+      "judgment date": {
+        "locator": "by.id(\"selenium-test-judgementDate\")"
+      },
+      "judgment order number": {
+        "locator": "by.id(\"selenium-test-judgmentOrderNumber\")"
+      },
+      "judgement ruling pronouncement date": {
+        "locator": "by.id(\"selenium-test-JudgementRulingPronouncementDate\")"
+      },
+      "judgement ruling pronouncement time": {
+        "locator": "by.id(\"sis-time-picker-selenium-test-FilingDate-time\")"
+      },
+      "nature of appeal": {
+        "locator": "by.id(\"selenium-test-case-nature-of-appeal\")"
+      },
+      "notes": {
+        "locator": "by.id(\"selenium-test-Notes\")"
+      },
+      "originating case number": {
+        "locator": "by.id(\"zw-originating-case-number\")"
+      },
+      "party role": {
+        "locator": "by.id(\"zw-public-role-id\")"
+      },
+      "party type": {
+        "locator": "by.id(\"zw-public-type-id\")"
+      },
+      "registrar": {
+        "locator": "by.id(\"selenium-test-originatingCaseRegistrar\")"
+      },
+      "registrar magistrate": {
+        "locator": "by.id(\"selenium-test-RegistrarMagistrateID\")"
+      },
+      "registration date": {
+        "locator": "by.id(\"selenium-test-registrationDate-date\")"
+      },
+      "registration time": {
+        "locator": "by.id(\"sis-time-picker-selenium-test-registrationDate-time\")"
+      },
+      "subject matter": {
+        "locator": "by.id(\"zw_subject_matter\")"
+      },
+      "subject matter total value": {
+        "locator": "by.id(\"selenium-test-subject-matter-total-value-amount-input\")"
+      },
+      "submission date": {
+        "locator": "by.id(\"selenium-test-submissionDate-date\")"
+      },
+      "submission time": {
+        "locator": "by.id(\"sis-time-picker-selenium-test-date-time-time\")"
+      },
+      "validate": {
+        "locator": "by.xpath(\"//*[@class='zw-party-validate-dialog-table']/tbody/tr/td[6]/button\")"
+      },
+      "validate first party": {
+        "locator": "by.xpath(\"//*[@id='case-participants-table-id']/tbody/tr[2]/td[6]/button\")"
+      },
+      "validate party radio group": {
+        "locator": "by.xpath(\"//*[@role='radiogroup']\")"
+      },
+      "validate second party": {
+        "locator": "by.xpath(\"//*[@id='case-participants-table-id']/tbody/tr[4]/td[6]/button\")"
+      },
+      "value": {
+        "locator": "by.id(\"selenium-test-value\")"
+      }
+    },
+    "legal opinion": {
+      "add": {
+        "locator": "by.id(\"selenium-test-legalOpinionpopupAdd\")"
+      },
+      "cancel": {
+        "locator": "by.id(\"selenium-test-legalOpinion-Cancel\")"
+      },
+      "comment": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-comment']//textarea\")"
+      },
+      "confirm": {
+        "locator": "by.id(\"selenium-test-legalOpinion-Add\")"
+      },
+      "document": {
+        "locator": "by.id(\"selenium-test-document\")"
+      },
+      "table": {
+        "locator": "by.id(\"selenium-test-legalOpinion\")"
+      }
+    },
+    "legal practitioners": {
+      "add legal practitioners": {
+        "locator": "by.id(\"zw-advocate-add-button-id\")"
+      },
+      "add to case": {
+        "locator": "by.id(\"acceptButtonCreateId\")"
+      },
+      "cancel": {
+        "locator": "by.id(\"cancelButtonId\")"
+      },
+      "city town": {
+        "locator": "by.id(\"zw-address-cityTown-id\")"
+      },
+      "country": {
+        "locator": "by.id(\"zw-address-country-id\")"
+      },
+      "date of birth registration": {
+        "locator": "by.id(\"party-date-of_birth-id\")"
+      },
+      "district": {
+        "locator": "by.id(\"zw-address-district-id\")"
+      },
+      "empty row": {
+        "locator": "by.xpath(\"//*[@id='party-search-table-id']/tbody/tr/td/span\")"
+      },
+      "full name": {
+        "locator": "by.id(\"party-full-id\")"
+      },
+      "nin tin": {
+        "locator": "by.id(\"party-nin-id\")"
+      },
+      "participant role": {
+        "locator": "by.id(\"zw-other-participant-id\")"
+      },
+      "participants table": {
+        "locator": "by.id(\"case-participants-table-id\")"
+      },
+      "party role": {
+        "locator": "by.id(\"zw-participant-id\")"
+      },
+      "party table": {
+        "locator": "by.id(\"case-parties-table-id\")"
+      },
+      "related party": {
+        "locator": "by.id(\"zw-party-participant-id\")"
+      },
+      "search": {
+        "locator": "by.id(\"search-button-id\")"
+      },
+      "searched result table": {
+        "locator": "by.id(\"party-search-table-id\")"
+      },
+      "select": {
+        "locator": "by.xpath(\"//*[@id='party-search-table-id']//mat-checkbox\")"
+      },
+      "show address search": {
+        "locator": "by.id(\"show-address-search-id\")"
+      },
+      "street": {
+        "locator": "by.id(\"zw-address-street-id\")"
+      },
+      "table": {
+        "locator": "by.id(\"case-advocates-table-id\")"
+      },
+      "validate": {
+        "locator": "by.xpath(\"//*[@class='zw-party-validate-dialog-table']/tbody/tr/td[6]/button\")"
+      },
+      "validate party 1": {
+        "locator": "by.xpath(\"//*[@id='case-participants-table-id']/tbody/tr[2]/td[6]/button\")"
+      },
+      "validate party 2": {
+        "locator": "by.xpath(\"//*[@id='case-participants-table-id']/tbody/tr[4]/td[6]/button\")"
+      },
+      "validate party radio group": {
+        "locator": "by.className(\"zw-party-validate-radio__group\")"
+      },
+      "ward": {
+        "locator": "by.id(\"zw-address-ward-id\")"
+      }
+    },
+    "offences": {
+      "add offence": {
+        "locator": "by.id(\"selenium-test-add-offence\")"
+      },
+      "add offence to case": {
+        "locator": "by.id(\"zw-add-to-case-button-id\")"
+      },
+      "details": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-charge-offence-table']/tbody/tr/td[5]/sis-multilingual-textbox/div\")"
+      },
+      "law act": {
+        "locator": "by.id(\"selenium-test-low\")"
+      },
+      "offence type": {
+        "locator": "by.id(\"selenium-test-offencType\")"
+      },
+      "search": {
+        "locator": "by.id(\"selenium-test-search\")"
+      },
+      "searched result table": {
+        "locator": "by.id(\"selenium-test-originating-case-table\")"
+      },
+      "section": {
+        "locator": "by.id(\"selenium-test-section\")"
+      },
+      "section id": {
+        "locator": "by.id(\"selenium-test-section-id\")"
+      },
+      "select": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-originating-case-table']/tbody/tr[1]/td[5]/mat-checkbox\")"
+      },
+      "table": {
+        "locator": "by.id(\"selenium-test-charge-offence-table\")"
+      }
+    },
+    "originating case": {
+      "add": {
+        "locator": "by.id(\"zw-originating-case-add-button\")"
+      },
+      "cancel": {
+        "locator": "by.id(\"zw-originating-case-cancel-button\")"
+      },
+      "case category": {
+        "locator": "by.xpath(\"(//*[@id='selenium-test-case-category'])[1]\")"
+      },
+      "case number": {
+        "locator": "by.xpath(\"(//*[@id='selenium-test-originating-case-number'])[1]//input\")"
+      },
+      "cause of action": {
+        "locator": "by.xpath(\"(//*[@id='selenium-test-subjectMetter'])[1]//input\")"
+      },
+      "court registry": {
+        "locator": "by.xpath(\"(//*[@id='active-court-registry-combo-box-courtRegistryId'])[1]\")"
+      },
+      "court": {
+        "locator": "by.id(\"selenium-test-search-originating-by-court\")"
+      },
+      "create new": {
+        "locator": "by.id(\"zw-originating-case-create-new-button\")"
+      },
+      "filing date": {
+        "locator": "by.id(\"startDate\")"
+      },
+      "find": {
+        "locator": "by.id(\"zw-originating-case-find-button\")"
+      },
+      "full name of party": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-search-originating-by-full-name']//input\")"
+      },
+      "instance level": {
+        "locator": "by.id(\"selenium-test-InstanceLevelID\")"
+      },
+      "party add": {
+        "locator": "by.id(\"selenium-test-select-parties-save-id\")"
+      },
+      "party popup": {
+        "locator": "by.id(\"selenium_party_add_popup\")"
+      },
+      "search": {
+        "locator": "by.id(\"selenium-test-originating-case-search\")"
+      },
+      "search by case number": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-search-originating-by-case-number']//input\")"
+      },
+      "searched result table": {
+        "locator": "by.id(\"zw-originating-case-dialog-table\")"
+      },
+      "select": {
+        "locator": "by.id(\"check-indicator\")"
+      },
+      "select first party": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-originating-case-table']/tbody/tr[1]/td[5]/mat-checkbox\")"
+      },
+      "select party": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-originating-case-table']/tbody//td[5]/mat-checkbox\")"
+      },
+      "select second party": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-originating-case-table']/tbody/tr[2]/td[5]/mat-checkbox\")"
+      },
+      "table": {
+        "locator": "by.id(\"zw-originating-case-dialog-table\")"
+      }
+    },
+    "overview": {
+      "general information": {
+        "locator": "by.tagName(\"zw-case-overview-general-information\")"
+      },
+      "order": {
+        "locator": "by.tagName(\"zw-case-overview-general-information\")"
+      }
+    },
+    "party": {
+      "add participants": {
+        "locator": "by.id(\"zw-participant-add-button\")"
+      },
+      "add party": {
+        "locator": "by.id(\"zw-zw-party-add-button\")"
+      },
+      "add to case": {
+        "locator": "by.id(\"acceptButtonCreateId\")"
+      },
+      "cancel": {
+        "locator": "by.id(\"cancelButtonId\")"
+      },
+      "city town": {
+        "locator": "by.id(\"zw-address-cityTown-id\")"
+      },
+      "country": {
+        "locator": "by.id(\"zw-address-country-id\")"
+      },
+      "create new": {
+        "locator": "by.id(\"selenium-test-party-create-new\")"
+      },
+      "create new individual": {
+        "locator": "by.id(\"selenium-test-create-individual\")"
+      },
+      "create new legal entity": {
+        "locator": "by.id(\"selenium-test-create-legal-entity\")"
+      },
+      "date of birth registration": {
+        "locator": "by.id(\"party-date-of_birth-id\")"
+      },
+      "district": {
+        "locator": "by.id(\"zw-address-district-id\")"
+      },
+      "empty row": {
+        "locator": "by.xpath(\"//*[@id='party-search-table-id']/tbody/tr/td/span\")"
+      },
+      "filter by individual legal entity": {
+        "locator": "by.id(\"zw-party-types-id\")"
+      },
+      "full name": {
+        "locator": "by.id(\"party-full-id\")"
+      },
+      "nin tin": {
+        "locator": "by.id(\"party-nin-id\")"
+      },
+      "participant role": {
+        "locator": "by.id(\"zw-other-participant-id\")"
+      },
+      "participants table": {
+        "locator": "by.id(\"case-participants-table-id\")"
+      },
+      "party role": {
+        "locator": "by.id(\"zw-participant-id\")"
+      },
+      "party table": {
+        "locator": "by.id(\"case-parties-table-id\")"
+      },
+      "related party": {
+        "locator": "by.id(\"zw-party-participant-id\")"
+      },
+      "search": {
+        "locator": "by.id(\"search-button-id\")"
+      },
+      "searched result table": {
+        "locator": "by.id(\"party-search-table-id\")"
+      },
+      "select": {
+        "locator": "by.xpath(\"//*[@id='party-search-table-id']//mat-checkbox\")"
+      },
+      "show address search": {
+        "locator": "by.id(\"show-address-search-id\")"
+      },
+      "street": {
+        "locator": "by.id(\"zw-address-street-id\")"
+      },
+      "validate": {
+        "locator": "by.xpath(\"//*[@class='zw-party-validate-dialog-table']/tbody/tr/td[6]/button\")"
+      },
+      "validate party 1": {
+        "locator": "by.xpath(\"//*[@id='case-participants-table-id']/tbody/tr[2]/td[6]/button\")"
+      },
+      "validate party 2": {
+        "locator": "by.xpath(\"//*[@id='case-participants-table-id']/tbody/tr[4]/td[6]/button\")"
+      },
+      "validate party radio group": {
+        "locator": "by.className(\"zw-party-validate-radio__group\")"
+      },
+      "ward": {
+        "locator": "by.id(\"zw-address-ward-id\")"
+      }
+    },
+    "related cases": {
+      "related case": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-related-cases-table']/tbody/tr/td[1]/a\")"
+      },
+      "table": {
+        "locator": "by.id(\"selenium-test-related-cases-table\")"
+      }
+    },
+    "workflow": {
+      "actions": {
+        "locator": "by.id(\"selenium-test--workfactions-primary\")"
+      },
+      "agreement reached proceed decision attachment": {
+        "locator": "by.id(\"selenium-test--workfactions-122\")"
+      },
+      "appealed": {
+        "locator": "by.id(\"selenium-test--workfactions-44\")"
+      },
+      "closed": {
+        "locator": "by.id(\"selenium-test--workfactions-45\")"
+      },
+      "consent agreement not reached": {
+        "locator": "by.id(\"selenium-test--workfactions-35\")"
+      },
+      "consent agreement reached": {
+        "locator": "by.id(\"selenium-test--workfactions-33\")"
+      },
+      "dismiss": {
+        "locator": "by.id(\"selenium-test--workfactions-106\")"
+      },
+      "enter ex parte judgement": {
+        "locator": "by.id(\"selenium-test--workfactions-30\")"
+      },
+      "gaps in agreement re-open mediation": {
+        "locator": "by.id(\"selenium-test--workfactions-34\")"
+      },
+      "judgment attached finalize case": {
+        "locator": "by.id(\"selenium-test--workfactions-43\")"
+      },
+      "judicial officer allocated": {
+        "locator": "by.id(\"selenium-test--workfactions-138\")"
+      },
+      "proceed to advertisement": {
+        "locator": "by.id(\"selenium-test--workfactions-199\")"
+      },
+      "proceed to conferencing": {
+        "locator": "by.id(\"selenium-test--workfactions-32\")"
+      },
+      "proceed to execution": {
+        "locator": "by.id(\"selenium-test--workfactions-82\")"
+      },
+      "proceed to mediation": {
+        "locator": "by.id(\"selenium-test--workfactions-145\")"
+      },
+      "proceed to pleadings": {
+        "locator": "by.id(\"selenium-test--workfactions-27\")"
+      },
+      "ready for judicial officer(s) allocation": {
+        "locator": "by.id(\"selenium-test--workfactions-24\")"
+      },
+      "ready for judicial officer(s) allocation2": {
+        "locator": "by.id(\"selenium-test--workfactions-29\")"
+      },
+      "register file": {
+        "locator": "by.id(\"selenium-test--workfactions-23\")"
+      },
+      "request to revise": {
+        "locator": "by.id(\"selenium-test--workfactions-22\")"
+      },
+      "revert withdraw to mediation completed": {
+        "locator": "by.id(\"selenium-test--workfactions-22\")"
+      },
+      "send for mediation result review": {
+        "locator": "by.id(\"selenium-test--workfactions-35\")"
+      },
+      "submit": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000014\")"
+      },
+      "verify file": {
+        "locator": "by.id(\"selenium-test--workfactions-23\")"
+      },
+      "withdraw": {
+        "locator": "by.id(\"selenium-test--workfactions-208\")"
+      }
+    }
+  },
+  "court requests": {
+    "actions": {
+      "completed (documents provided)": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000252\")"
+      },
+      "paid": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000242\")"
+      },
+      "payment confirmed": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000243\")"
+      },
+      "submit": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000240\")"
+      },
+      "submit for payment": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000241\")"
+      }
+    },
+    "document": {
+      "add document": {
+        "locator": "by.id(\"selenium-test-courtRequestDocuments-Add\")"
+      },
+      "add signed copy": {
+        "locator": "by.id(\"selenium-test-courtRequestSignedCopyDocuments-Add\")"
+      },
+      "attach document": {
+        "locator": "by.id(\"selenium-test-add-new-action-button-courtRequestDocuments\")"
+      },
+      "attach signed copy": {
+        "locator": "by.id(\"add-new-document-courtRequestSignedCopyDocuments-button-id\")"
+      },
+      "description": {
+        "locator": "by.id(\"selenium-test-description\")"
+      },
+      "table": {
+        "locator": "by.id(\"ejustice-documents-table-courtRequestDocuments\")"
+      }
+    },
+    "general": {
+      "amount": {
+        "locator": "by.id(\"selenium-test-Amount-amount-input\")"
+      },
+      "assigned assistant registrar": {
+        "locator": "by.id(\"selenium-test-assignedAssistantRegistrarId\")"
+      },
+      "case number": {
+        "locator": "by.id(\"selenium-test-caseNumber\")"
+      },
+      "court": {
+        "locator": "by.id(\"selenium-test-courts\")"
+      },
+      "first name": {
+        "locator": "by.id(\"selenium-test-firstName\")"
+      },
+      "last name": {
+        "locator": "by.id(\"selenium-test-lastName\")"
+      },
+      "paid online": {
+        "locator": "by.id(\"selenium-test-paidOnline\")"
+      },
+      "party type": {
+        "locator": "by.id(\"selenium-test-partyTypeId\")"
+      },
+      "receipt number": {
+        "locator": "by.id(\"selenium-test-receiptNumber\")"
+      },
+      "registrar deputy registrar": {
+        "locator": "by.id(\"selenium-test-registrarId\")"
+      },
+      "request date": {
+        "locator": "by.id(\"selenium-test-requestDate\")"
+      },
+      "request details": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-requestDetails']//textarea\")"
+      }
+    }
+  },
+  "document": {
+    "document": {
+      "description": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-description']//textarea\")"
+      },
+      "document": {
+        "locator": "by.id(\"selenium-test-attachmentId\")"
+      },
+      "document type": {
+        "locator": "by.id(\"document-type-select\")"
+      },
+      "language": {
+        "locator": "by.id(\"selenium-test-languageId\")"
+      },
+      "signed copy": {
+        "locator": "by.id(\"selenium-test-attachmentSignedCopyId\")"
+      },
+      "signed copy description": {
+        "locator": "by.id(\"selenium-test-description\")"
+      },
+      "title": {
+        "locator": "by.id(\"selenium-test-title\")"
+      }
+    }
+  },
+  "export": {
+    "export": {
+      "export": {
+        "locator": "by.xpath(\"(//*[@class='sis-form-header sis-form-header--view ng-star-inserted']//button)[5]\")"
+      },
+      "download": {
+        "locator": "by.xpath(\"(//*[@class='dc-export-menu__action-group']//button)[1]\")"
+      }
+    }
+  },
+  "header": {
+    "buttons": {
+      "actions": {
+        "locator": "by.id(\"selenium-test--workfactions-primary\")"
+      },
+      "back": {
+        "locator": "by.id(\"selenium-test--close\")"
+      },
+      "cancel": {
+        "locator": "by.id(\"selenium-test--edit-cancel\")"
+      },
+      "create": {
+        "locator": "by.id(\"portfolio-create-button\")"
+      },
+      "create new": {
+        "locator": "by.id(\"createnew\")"
+      },
+      "create new case": {
+        "locator": "by.id(\"create_new_case\")"
+      },
+      "edit": {
+        "locator": "by.id(\"selenium-test--view-edit\")"
+      },
+      "export": {
+        "locator": "by.className(\"sis-form-header__button\")"
+      },
+      "export pdf": {
+        "locator": "by.id(\"selenium-test--export-export-pdf\")"
+      },
+      "save": {
+        "locator": "by.id(\"selenium-test--edit-save\")"
+      },
+      "save and close": {
+        "locator": "by.id(\"selenium-test--edit-saveAndClose\")"
+      }
+    },
+    "tabs": {
+      "tab": {
+        "locator": "by.tagName(\"mat-tab-header\")"
+      }
+    }
+  },
+  "judgment": {
+    "actions": {
+      "finalize": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000176\")"
+      },
+      "submit": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000046\")"
+      }
+    },
+    "document": {
+      "attach final document": {
+        "locator": "by.id(\"JudgementFinalDocumentattach-id\")"
+      },
+      "attach judgement members of coram space": {
+        "locator": "by.id(\"JudgementMembersOfCoramSpaceadd-row-id\")"
+      },
+      "attach research assistant's space": {
+        "locator": "by.id(\"JudgementResearchAssistantsSpaceadd-row-id\")"
+      },
+      "attach supporting document": {
+        "locator": "by.id(\"JudgementSupportingDocumentadd-row-id\")"
+      },
+      "edit final document": {
+        "locator": "by.id(\"JudgementFinalDocumentedit-id\")"
+      },
+      "edit judgement members of coram space": {
+        "locator": "by.id(\"JudgementMembersOfCoramSpaceedit-row-id\")"
+      },
+      "edit research assistant's space": {
+        "locator": "by.id(\"JudgementResearchAssistantsSpaceedit-row-id\")"
+      },
+      "edit supporting document": {
+        "locator": "by.id(\"JudgementSupportingDocumentedit-row-id\")"
+      },
+      "judgement members of coram space row": {
+        "locator": "by.xpath(\"//*[@id='JudgementMembersOfCoramSpace-table']/tbody/tr\")"
+      },
+      "judgement members of coram space table": {
+        "locator": "by.id(\"JudgementMembersOfCoramSpace-table\")"
+      },
+      "research assistant's space row": {
+        "locator": "by.xpath(\"//*[@id='JudgementResearchAssistantsSpace-table']/tbody/tr\")"
+      },
+      "research assistant's space table": {
+        "locator": "by.id(\"JudgementResearchAssistantsSpace-table\")"
+      },
+      "supporting document row": {
+        "locator": "by.xpath(\"//*[@id='JudgementSupportingDocument-table']/tbody/tr\")"
+      },
+      "supporting document table": {
+        "locator": "by.id(\"JudgementSupportingDocument-table\")"
+      }
+    },
+    "general": {
+      "add decision details": {
+        "locator": "by.id(\"selenium-test-DecisionDetailspopupAdd\")"
+      },
+      "against for": {
+        "locator": "by.id(\"selenium-test-JudgementDecisionDetailAgainstForIDgroup\")"
+      },
+      "applicable laws": {
+        "locator": "by.id(\"selenium-test-applicableLaws\")"
+      },
+      "background": {
+        "locator": "by.id(\"selenium-test-background\")"
+      },
+      "comments directions": {
+        "locator": "by.id(\"selenium-test-commentsDirections\")"
+      },
+      "created on behalf of": {
+        "locator": "by.id(\"selenium-test-createdById\")"
+      },
+      "decision details add": {
+        "locator": "by.id(\"selenium-test-DecisionDetails-Add\")"
+      },
+      "decision details edit": {
+        "locator": "by.id(\"selenium-test-DecisionDetails-Edit\")"
+      },
+      "decision details row": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-DecisionDetails']/tbody/tr\")"
+      },
+      "decision details table": {
+        "locator": "by.id(\"selenium-test-DecisionDetails\")"
+      },
+      "decision type": {
+        "locator": "by.id(\"selenium-test-JudgementDecisionDetailTypeID\")"
+      },
+      "details": {
+        "locator": "by.id(\"selenium-test-Details\")"
+      },
+      "edit decision details": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-DecisionDetails']/tbody/tr/td[5]/button\")"
+      },
+      "granted not granted": {
+        "locator": "by.id(\"selenium-test-JudgementDecisionDetailGrantedNotGrantedIDgroup\")"
+      },
+      "judgment date": {
+        "locator": "by.id(\"selenium-test-judgementDate\")"
+      },
+      "judgment pronouncement date": {
+        "locator": "by.id(\"selenium-test-judgementPronouncementDate\")"
+      },
+      "number": {
+        "locator": "by.xpath(\"//div[@id='selenium-test-name']//input\")"
+      },
+      "particulars of sureties": {
+        "locator": "by.id(\"selenium-test-ParticularsOfSureties\")"
+      },
+      "party": {
+        "locator": "by.id(\"selenium-test-judgementParty\")"
+      },
+      "party role": {
+        "locator": "by.id(\"selenium-test-party-role-id\")"
+      },
+      "summary decision": {
+        "locator": "by.id(\"selenium-test-summaryDecision\")"
+      }
+    }
+  },
+  "letters": {
+    "actions": {
+      "delivered": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000067\")"
+      },
+      "submit physically": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000034\")"
+      }
+    },
+    "document": {
+      "add document": {
+        "locator": "by.id(\"selenium-test-lettersNoticesDocuments-Add\")"
+      },
+      "add signed copy": {
+        "locator": "by.id(\"selenium-test-lettersNoticesSignedCopyDocuments-Add\")"
+      },
+      "attach document": {
+        "locator": "by.id(\"selenium-test-add-new-action-button-lettersNoticesDocuments\")"
+      },
+      "attach signed copy": {
+        "locator": "by.id(\"add-new-document-lettersNoticesSignedCopyDocuments-button-id\")"
+      },
+      "table": {
+        "locator": "by.id(\"ejustice-documents-table-lettersNoticesDocuments\")"
+      }
+    },
+    "general": {
+      "address": {
+        "locator": "by.xpath(\"//div[@id='selenium-test-address']//textarea\")"
+      },
+      "amount": {
+        "locator": "by.id(\"selenium-test-amount\")"
+      },
+      "by consent": {
+        "locator": "by.id(\"selenium-test-byConsent\")"
+      },
+      "created on behalf of": {
+        "locator": "by.id(\"selenium-test-createdbyId\")"
+      },
+      "date": {
+        "locator": "by.id(\"selenium-test-Date\")"
+      },
+      "date of calling for heads of argument": {
+        "locator": "by.id(\"selenium-test-callingDismissalNoticeDate\")"
+      },
+      "date of determination": {
+        "locator": "by.id(\"selenium-test-dateofDetermination\")"
+      },
+      "date the query was raised by judge": {
+        "locator": "by.id(\"selenium-test-dateQueryWasRaised\")"
+      },
+      "date when this was done": {
+        "locator": "by.id(\"selenium-test-dateWasDone\")"
+      },
+      "details": {
+        "locator": "by.xpath(\"//div[@id='selenium-test-details']//textarea\")"
+      },
+      "directives given postponed sine die removed": {
+        "locator": "by.id(\"selenium-test-dateDirectivesGiven\")"
+      },
+      "dismissal date": {
+        "locator": "by.id(\"selenium-test-callingDismissalNoticeDate\")"
+      },
+      "issued by": {
+        "locator": "by.id(\"zw-issued-by-id\")"
+      },
+      "issued by category": {
+        "locator": "by.className(\"mat-radio-group\")"
+      },
+      "issued date": {
+        "locator": "by.id(\"issue-date-id-date\")"
+      },
+      "issued time": {
+        "locator": "by.id(\"sis-time-picker-issue-date-id-time\")"
+      },
+      "matter was": {
+        "locator": "by.id(\"selenium-test-matterWasId\")"
+      },
+      "notes": {
+        "locator": "by.id(\"note-Id\")"
+      },
+      "notice date": {
+        "locator": "by.id(\"selenium-test-callingDismissalNoticeDate\")"
+      },
+      "notice type": {
+        "locator": "by.id(\"zw-notice-type-id\")"
+      },
+      "notice type label": {
+        "locator": "by.id(\"zw-notice-type-label-id\")"
+      },
+      "notification date": {
+        "locator": "by.id(\"selenium-test-callingDismissalNoticeDate\")"
+      },
+      "number of days": {
+        "locator": "by.id(\"selenium-test-amountOfDays\")"
+      },
+      "other recipients": {
+        "locator": "by.id(\"recipients-id\")"
+      },
+      "party": {
+        "locator": "by.id(\"selenium-test-lettersNoticesParty\")"
+      },
+      "party was presented": {
+        "locator": "by.id(\"selenium-test-partyWasPresented\")"
+      },
+      "recipient user": {
+        "locator": "by.id(\"selenium-test-recipientUserId\")"
+      },
+      "referred letter date": {
+        "locator": "by.id(\"selenium-test-referredLetterDate\")"
+      },
+      "request date": {
+        "locator": "by.id(\"selenium-test-callingDismissalNoticeDate\")"
+      },
+      "scheduled date time": {
+        "locator": "by.id(\"selenium-test-scheduledDateTime-date\")"
+      },
+      "subject": {
+        "locator": "by.id(\"selenium-test-lettersNoticesSubject\")"
+      },
+      "supposed to rectify defect on or before": {
+        "locator": "by.id(\"selenium-test-supposedRectifyOnBefore\")"
+      },
+      "to be paid within 30 indicated amount of days from": {
+        "locator": "by.id(\"selenium-test-paidWithin30DaysFrom\")"
+      },
+      "to file proof of payment date": {
+        "locator": "by.id(\"selenium-test-toFileProofOfPaymentDate\")"
+      },
+      "to recipients": {
+        "locator": "by.id(\"selenium-test-Recipients\")"
+      },
+      "to recipients value": {
+        "locator": "by.id(\"unotasdasdpe\")"
+      }
+    }
+  },
+  "login page": {
+    "login": {
+      "username": {
+        "locator": "by.id(\"login\")"
+      }
+    }
+  },
+  "miscellaneous forms": {
+    "actions": {
+      "compliance checked receipt acknowledged": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000044\")"
+      },
+      "submit": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000043\")"
+      }
+    },
+    "costs": {
+      "add": {
+        "locator": "by.id(\"selenium-test-defaultJudgementCosts-add\")"
+      },
+      "cost": {
+        "locator": "by.id(\"selenium-test-defaultJudgementCosts--1-1\")"
+      },
+      "description": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-defaultJudgementCosts--1-0']//input\")"
+      },
+      "table": {
+        "locator": "by.id(\"selenium-test-defaultJudgementCosts\")"
+      }
+    },
+    "document": {
+      "add document": {
+        "locator": "by.id(\"selenium-test-miscellaneousFormDocuments-Add\")"
+      },
+      "add signed copy": {
+        "locator": "by.id(\"selenium-test-miscellaneusFormSignedCopyDocuments-Add\")"
+      },
+      "attach document": {
+        "locator": "by.id(\"selenium-test-add-new-action-button-miscellaneousFormDocuments\")"
+      },
+      "attach signed copy": {
+        "locator": "by.id(\"add-new-document-miscellaneusFormSignedCopyDocuments-button-id\")"
+      },
+      "table": {
+        "locator": "by.id(\"ejustice-documents-table-miscellaneousFormDocuments\")"
+      }
+    },
+    "general": {
+      "address of person executed in the presence of": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-inPresenceOfAddress']//input\")"
+      },
+      "admissions made by the parties": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-admissionsMadeParties']//textarea\")"
+      },
+      "amount": {
+        "locator": "by.id(\"selenium-test-amount\")"
+      },
+      "background to the dispute": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-backgroundDispute']//textarea\")"
+      },
+      "case category": {
+        "locator": "by.id(\"selenium-test-case-category\")"
+      },
+      "court": {
+        "locator": "by.id(\"selenium-test-court\")"
+      },
+      "court level": {
+        "locator": "by.id(\"selenium-test-court-level\")"
+      },
+      "create": {
+        "locator": "by.id(\"selenium-test-select-parties-save-id\")"
+      },
+      "created on behalf of": {
+        "locator": "by.id(\"selenium-test-createdbyId\")"
+      },
+      "date": {
+        "locator": "by.id(\"selenium-test-date-date\")"
+      },
+      "designation of person executed in presence of": {
+        "locator": "by.id(\"selenium-test-inPresenceOfRoleId\")"
+      },
+      "details": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-details']//textarea\")"
+      },
+      "division type": {
+        "locator": "by.id(\"selenium-test-division-type\")"
+      },
+      "in terms of": {
+        "locator": "by.id(\"selenium-test-inTermsOf\")"
+      },
+      "judicial officer registrar clerk of court": {
+        "locator": "by.id(\"selenium-test-judicialOfficerRegistrarClerk\")"
+      },
+      "letter date": {
+        "locator": "by.id(\"selenium-test-documentDate\")"
+      },
+      "name of person executed in the presence of": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-inPresenceOfName']//input\")"
+      },
+      "next scheduled hearing": {
+        "locator": "by.id(\"selenium-test-nextScheduledHearing-searchbox\")"
+      },
+      "next scheduled hearing date": {
+        "locator": "by.id(\"selenium-test-nextScheduledHearingDate\")"
+      },
+      "nin of person executed in the presence of": {
+        "locator": "by.id(\"selenium-test-inPresenceOfNin\")"
+      },
+      "notice date": {
+        "locator": "by.id(\"selenium-test-date-date\")"
+      },
+      "party": {
+        "locator": "by.id(\"selenium-test-miscellaneousFormParties\")"
+      },
+      "payment end date": {
+        "locator": "by.id(\"selenium-test-paymentEndDate\")"
+      },
+      "payment start date": {
+        "locator": "by.id(\"selenium-test-paymentStartDate\")"
+      },
+      "percent": {
+        "locator": "by.id(\"selenium-test-percent\")"
+      },
+      "question for determination": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-questionForDetermination']//textarea\")"
+      },
+      "renunciation date": {
+        "locator": "by.id(\"selenium-test-renunciationDate\")"
+      },
+      "select type": {
+        "locator": "by.id(\"selenium-test-select-entity-type\")"
+      }
+    },
+    "miscellaneous form documents list": {
+      "add": {
+        "locator": "by.id(\"selenium-test-miscellaneousFormDocumentsList-add\")"
+      },
+      "table": {
+        "locator": "by.id(\"selenium-test-miscellaneousFormDocumentsList\")"
+      },
+      "title": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-miscellaneousFormDocumentsList--1-0']//input\")"
+      }
+    },
+    "witness summary of evidence": {
+      "add": {
+        "locator": "by.id(\"selenium-test-witnessSummaryOfEvidences-add\")"
+      },
+      "summary of evidence": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-witnessSummaryOfEvidences--1-0']//textarea\")"
+      },
+      "table": {
+        "locator": "by.id(\"selenium-test-witnessSummaryOfEvidences\")"
+      },
+      "witness name and designation": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-witnessSummaryOfEvidences--1-1']//input\")"
+      }
+    }
+  },
+  "navigations": {
+    "navigation": {
+      "affidavits": {
+        "locator": "by.id(\"selenium-test--navigation-Affidavit\")"
+      },
+      "agreement and report": {
+        "locator": "by.id(\"selenium-test--navigation-Agreement\")"
+      },
+      "applications": {
+        "locator": "by.id(\"selenium-test--navigation-Application\")"
+      },
+      "complaints": {
+        "locator": "by.id(\"selenium-test--navigation-Complaint\")"
+      },
+      "court sittings": {
+        "locator": "by.id(\"selenium-test--navigation-CourtSitting\")"
+      },
+      "decree": {
+        "locator": "by.id(\"selenium-test--navigation-Decree\")"
+      },
+      "exhibits": {
+        "locator": "by.id(\"selenium-test--navigation-Exhibit\")"
+      },
+      "general information": {
+        "locator": "by.xpath(\"(//*[@id='selenium-test--navigation-Case'])[2]\")"
+      },
+      "judgment": {
+        "locator": "by.id(\"selenium-test--navigation-Judgement\")"
+      },
+      "letters": {
+        "locator": "by.id(\"selenium-test--navigation-LettersNotices\")"
+      },
+      "miscellaneous forms": {
+        "locator": "by.id(\"selenium-test--navigation-MiscellaneusForm\")"
+      },
+      "navigation": {
+        "locator": "by.id(\"selenium-test--navigation\")"
+      },
+      "notes": {
+        "locator": "by.id(\"selenium-test--navigation-Note\")"
+      },
+      "orders": {
+        "locator": "by.id(\"selenium-test--navigation-Order\")"
+      },
+      "other documents": {
+        "locator": "by.id(\"selenium-test--navigation-OtherDocuments\")"
+      },
+      "overview": {
+        "locator": "by.id(\"selenium-test--navigation-Case\")"
+      },
+      "payments": {
+        "locator": "by.id(\"selenium-test--navigation-Payment\")"
+      },
+      "pleadings": {
+        "locator": "by.id(\"selenium-test--navigation-Pleading\")"
+      },
+      "sessions": {
+        "locator": "by.id(\"selenium-test--navigation-Session\")"
+      },
+      "sheriff requests": {
+        "locator": "by.id(\"selenium-test--navigation-SheriffRequest\")"
+      },
+      "summons": {
+        "locator": "by.id(\"selenium-test--navigation-Summon\")"
+      },
+      "tasks": {
+        "locator": "by.id(\"selenium-test--navigation-Task\")"
+      },
+      "warrants": {
+        "locator": "by.id(\"selenium-test--navigation-Warrant\")"
+      }
+    },
+    "navigation bar": {
+      "all cases": {
+        "locator": "by.id(\"id_nav.bar.myWorkspace.cases\")"
+      },
+      "court requests": {
+        "locator": "by.id(\"id_nav.bar.myWorkspace.courtRequests\")"
+      },
+      "my workspace": {
+        "locator": "by.id(\"id_nav.bar.myWorkspace\")"
+      }
+    },
+    "overview": {
+      "affidavits": {
+        "locator": "by.id(\"affidavitOverviewItemId\")"
+      },
+      "agreement and report": {
+        "locator": "by.id(\"selenium-test-agreementCard\")"
+      },
+      "applications": {
+        "locator": "by.id(\"applicationOverviewItemId\")"
+      },
+      "case details": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-case-overview-general-information']/div/mat-card/div[1]/div/div[2]/button\")"
+      },
+      "complaints": {
+        "locator": "by.id(\"selenium-test-case-overview-complaint\")"
+      },
+      "court sittings": {
+        "locator": "by.id(\"selenium-test-case-overview-court-sittings\")"
+      },
+      "decree": {
+        "locator": "by.id(\"\")"
+      },
+      "exhibits": {
+        "locator": "by.id(\"selenium-test-exhibitCard\")"
+      },
+      "general information": {
+        "locator": "by.className(\"zw-general-card-container\")"
+      },
+      "judgment": {
+        "locator": "by.id(\"judgementOverviewItemId\")"
+      },
+      "letters": {
+        "locator": "by.id(\"lettersnoticesOverviewItemId\")"
+      },
+      "miscellaneous forms": {
+        "locator": "by.id(\"miscellaneusformOverviewItemId\")"
+      },
+      "orders": {
+        "locator": "by.id(\"orderOverviewItemId\")"
+      },
+      "other documents": {
+        "locator": "by.id(\"selenium-test-case-overview-other-documents\")"
+      },
+      "payments": {
+        "locator": "by.id(\"paymentOverviewItemId\")"
+      },
+      "pleadings": {
+        "locator": "by.id(\"pleadingOverviewItemId\")"
+      },
+      "sessions": {
+        "locator": "by.id(\"sessionOverviewItemId\")"
+      },
+      "sheriff requests": {
+        "locator": "by.id(\"sheriffrequestOverviewItemId\")"
+      },
+      "summons": {
+        "locator": "by.id(\"summonOverviewItemId\")"
+      },
+      "tasks": {
+        "locator": "by.id(\"taskOverviewItemId\")"
+      },
+      "warrants": {
+        "locator": "by.id(\"warrantOverviewItemId\")"
+      }
+    }
+  },
+  "orders": {
+    "actions": {
+      "signed by registrar": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000075\")"
+      },
+      "submit for registrar's signature": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000203\")"
+      }
+    },
+    "document": {
+      "add document": {
+        "locator": "by.id(\"selenium-test-orderDocuments-Add\")"
+      },
+      "add signed copy": {
+        "locator": "by.id(\"selenium-test-orderSignedCopyDocuments-Add\")"
+      },
+      "attach document": {
+        "locator": "by.id(\"selenium-test-add-new-action-button-orderDocuments\")"
+      },
+      "attach signed copy": {
+        "locator": "by.id(\"add-new-document-orderSignedCopyDocuments-button-id\")"
+      },
+      "language": {
+        "locator": "by.id(\"selenium-test-language\")"
+      },
+      "table": {
+        "locator": "by.id(\"ejustice-documents-table-orderDocuments\")"
+      }
+    },
+    "general": {
+      "affected parties": {
+        "locator": "by.id(\"selenium-test-OrderAffectedParties\")"
+      },
+      "appeal against (civil)": {
+        "locator": "by.id(\"selenium-test-appealAgainstCivilId\")"
+      },
+      "appeal against (criminal)": {
+        "locator": "by.id(\"selenium-test-appealAgainstId\")"
+      },
+      "by consent": {
+        "locator": "by.id(\"selenium-test-byConsent\")"
+      },
+      "case management order": {
+        "locator": "by.id(\"selenium-test-caseManagementOrder\")"
+      },
+      "company name": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-companyName']//input\")"
+      },
+      "created on behalf of": {
+        "locator": "by.id(\"selenium-test-createdbyId\")"
+      },
+      "interim relief granted": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-interimReliefGranted']//textarea\")"
+      },
+      "issued by": {
+        "locator": "by.id(\"zw-issued-by-id\")"
+      },
+      "issued date": {
+        "locator": "by.id(\"issue-date-id-date\")"
+      },
+      "issued time": {
+        "locator": "by.id(\"sis-time-picker-issue-date-id-time\")"
+      },
+      "newspaper name and edition": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-newspaperNameEditionID']//textarea\")"
+      },
+      "note": {
+        "locator": "by.id(\"note-Id\")"
+      },
+      "number of days": {
+        "locator": "by.id(\"selenium-test-numberOfDays\")"
+      },
+      "order date": {
+        "locator": "by.id(\"selenium-test-orderDate\")"
+      },
+      "order details": {
+        "locator": "by.id(\"details-Id\")"
+      },
+      "order effective date": {
+        "locator": "by.id(\"effective-date-id-date\")"
+      },
+      "order effective time": {
+        "locator": "by.id(\"sis-time-picker-effective-date-id-time\")"
+      },
+      "order type": {
+        "locator": "by.id(\"selenium-test-order-type\")"
+      },
+      "other": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-other']//textarea\")"
+      },
+      "party": {
+        "locator": "by.id(\"selenium-test-orderParties\")"
+      },
+      "provisional order for general publication type": {
+        "locator": "by.id(\"selenium-test-provisionalOrderForGeneralPublicationTypeId\")"
+      },
+      "recipients": {
+        "locator": "by.id(\"recipients-id\")"
+      },
+      "select sub type": {
+        "locator": "by.id(\"selenium-test-select-entity-sub-type\")"
+      },
+      "select type": {
+        "locator": "by.id(\"selenium-test-select-entity-type\")"
+      },
+      "service of provisional order": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-serviceofProvisionalOrder']//textarea\")"
+      },
+      "sitting date reference": {
+        "locator": "by.id(\"zw-sitting-date-id\")"
+      },
+      "terms of final order sought": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-termsofFinalOrder']//textarea\")"
+      }
+    },
+    "order details": {
+      "add": {
+        "locator": "by.id(\"selenium-test-orderDetailspopupAdd\")"
+      },
+      "cancel": {
+        "locator": "by.id(\"selenium-test-orderDetails-Cancel\")"
+      },
+      "confirm": {
+        "locator": "by.id(\"selenium-test-orderDetails-Add\")"
+      },
+      "details": {
+        "locator": "by.id(\"selenium-test-details\")"
+      },
+      "table": {
+        "locator": "by.id(\"selenium-test-orderDetails\")"
+      }
+    }
+  },
+  "party": {
+    "actions": {
+      "table": {
+        "locator": "by.id(\"draft-party-search-table-id\")"
+      },
+      "validate": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000169\")"
+      },
+      "validate party": {
+        "locator": "by.xpath(\"(//*[@id='case-parties-table-id']//button)[3]\")"
+      }
+    },
+    "addresses": {
+      "add": {
+        "locator": "by.id(\"zw-party-address-add-button\")"
+      },
+      "address type": {
+        "locator": "by.id(\"address_type_id\")"
+      },
+      "cancel": {
+        "locator": "by.id(\"cancelButtonId\")"
+      },
+      "city town": {
+        "locator": "by.id(\"zw-address-cityTown-id\")"
+      },
+      "confirm": {
+        "locator": "by.id(\"acceptButtonCreateId\")"
+      },
+      "country": {
+        "locator": "by.id(\"zw-address-country-id\")"
+      },
+      "district": {
+        "locator": "by.id(\"zw-address-district-id\")"
+      },
+      "edit": {
+        "locator": "by.xpath(\"(//*[@id='docEditButtonId'])[2]\")"
+      },
+      "legal entity edit": {
+        "locator": "by.id(\"docEditButtonId\")"
+      },
+      "other addresses": {
+        "locator": "by.id(\"other-addresses-id\")"
+      },
+      "province": {
+        "locator": "by.id(\"zw-address-province-id\")"
+      },
+      "row": {
+        "locator": "by.xpath(\"//*[@id='zw-party-address-table-id']/tbody/tr\")"
+      },
+      "street": {
+        "locator": "by.id(\"zw-address-street-id\")"
+      },
+      "table": {
+        "locator": "by.id(\"zw-party-address-table-id\")"
+      },
+      "ward suburb": {
+        "locator": "by.id(\"zw-address-ward-id\")"
+      }
+    },
+    "employment": {
+      "add": {
+        "locator": "by.id(\"selenium-test-employmentspopupAdd\")"
+      },
+      "cancel": {
+        "locator": "by.id(\"selenium-test-employments-Cancel\")"
+      },
+      "confirm": {
+        "locator": "by.id(\"selenium-test-employments-Add\")"
+      },
+      "current employer": {
+        "locator": "by.id(\"selenium-test-currentEmployer\")"
+      },
+      "details": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-details']//textarea\")"
+      },
+      "edit": {
+        "locator": "by.id(\"docEditButtonId\")"
+      },
+      "employer name": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-employerName']//input\")"
+      },
+      "employment end date": {
+        "locator": "by.id(\"selenium-test-employmentEndDate\")"
+      },
+      "employment start date": {
+        "locator": "by.id(\"selenium-test-employmentStartDate\")"
+      },
+      "position held": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-positionHeld']//input\")"
+      },
+      "row": {
+        "locator": "by.xpath(\"//*[@id='zw-party-employment-table-id']/tbody/tr\")"
+      },
+      "table": {
+        "locator": "by.id(\"selenium-test-employments\")"
+      }
+    },
+    "general": {
+      "business phone number": {
+        "locator": "by.id(\"selenium-test-businessPhoneNumber\")"
+      },
+      "business phone number code": {
+        "locator": "by.id(\"selenium-test-businessPhoneNumberCode\")"
+      },
+      "citizenship": {
+        "locator": "by.id(\"selenium-test-citizenshipId\")"
+      },
+      "date of birth": {
+        "locator": "by.id(\"selenium-test-dateOfBirth\")"
+      },
+      "description": {
+        "locator": "by.id(\"selenium-test-description\")"
+      },
+      "disability": {
+        "locator": "by.id(\"selenium-test-disabilityId-multiselect\")"
+      },
+      "driver license no": {
+        "locator": "by.id(\"selenium-test-driverLicenseNo\")"
+      },
+      "educational level": {
+        "locator": "by.id(\"selenium-test-educationalLevelId\")"
+      },
+      "entity name": {
+        "locator": "by.id(\"selenium-test-entityName\")"
+      },
+      "entity registration date": {
+        "locator": "by.id(\"selenium-test-entityRegistrationDate\")"
+      },
+      "entity type": {
+        "locator": "by.id(\"selenium-test-entityTypeId\")"
+      },
+      "first name": {
+        "locator": "by.id(\"selenium-test-firstName\")"
+      },
+      "first party": {
+        "locator": "by.xpath(\"//*[@id='case-parties-table-id']/tbody/tr[2]/td[2]/a\")"
+      },
+      "gender": {
+        "locator": "by.id(\"selenium-test-genderId\")"
+      },
+      "given name": {
+        "locator": "by.id(\"selenium-test-givenName\")"
+      },
+      "governmental entity": {
+        "locator": "by.id(\"selenium-test-governmentalEntity\")"
+      },
+      "home phone number": {
+        "locator": "by.id(\"selenium-test-homePhoneNumber\")"
+      },
+      "home phone number code": {
+        "locator": "by.id(\"selenium-test-homePhoneNumberCode\")"
+      },
+      "initials": {
+        "locator": "by.id(\"selenium-test-initials\")"
+      },
+      "is law firm": {
+        "locator": "by.id(\"selenium-test-isLawFirm\")"
+      },
+      "is legal practitioner": {
+        "locator": "by.id(\"selenium-test-isLegalPractitioner\")"
+      },
+      "language": {
+        "locator": "by.id(\"selenium-test-languageId\")"
+      },
+      "last name": {
+        "locator": "by.id(\"selenium-test-lastName\")"
+      },
+      "legal entity phone number": {
+        "locator": "by.xpath(\"(//input[@id='selenium-test-phone'])[2]\")"
+      },
+      "marital status": {
+        "locator": "by.id(\"selenium-test-maritalStatusId\")"
+      },
+      "mobile phone number": {
+        "locator": "by.id(\"selenium-test-mobilePhoneNumber\")"
+      },
+      "mobile phone number code": {
+        "locator": "by.id(\"selenium-test-mobilePhoneNumberCode\")"
+      },
+      "national id": {
+        "locator": "by.id(\"selenium-test-nationalIdentificationNumber\")"
+      },
+      "other name": {
+        "locator": "by.id(\"selenium-test-otherName\")"
+      },
+      "other phone number": {
+        "locator": "by.id(\"selenium-test-otherPhoneNumber\")"
+      },
+      "other phone number code": {
+        "locator": "by.id(\"selenium-test-otherPhoneNumberCode\")"
+      },
+      "passport no": {
+        "locator": "by.id(\"selenium-test-passportNo\")"
+      },
+      "phone number": {
+        "locator": "by.id(\"selenium-test-phone\")"
+      },
+      "phone number code": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-country_code']/mat-form-field/div/div[1]/div[1]/input\")"
+      },
+      "preferred communication method": {
+        "locator": "by.id(\"selenium-test-preferredCommunicationMethodId-multiselect\")"
+      },
+      "primary email": {
+        "locator": "by.id(\"selenium-test-primaryEmail\")"
+      },
+      "registration id": {
+        "locator": "by.id(\"selenium-test-registrationID\")"
+      },
+      "second party": {
+        "locator": "by.xpath(\"//*[@id='case-parties-table-id']/tbody/tr[4]/td[2]/a\")"
+      },
+      "secondary email": {
+        "locator": "by.id(\"selenium-test-secondaryEmail\")"
+      },
+      "status": {
+        "locator": "by.id(\"selenium-test-PartyStatusID\")"
+      },
+      "tax id": {
+        "locator": "by.id(\"selenium-test-taxIdentificationNumber\")"
+      },
+      "tin": {
+        "locator": "by.id(\"selenium-test-phone\")"
+      },
+      "url": {
+        "locator": "by.id(\"selenium-test-url\")"
+      }
+    },
+    "land information": {
+      "add": {
+        "locator": "by.id(\"selenium-test-landInformationspopupAdd\")"
+      },
+      "cancel": {
+        "locator": "by.id(\"selenium-test-landInformations-Cancel\")"
+      },
+      "city town": {
+        "locator": "by.id(\"selenium-test-cityTownId\")"
+      },
+      "confirm": {
+        "locator": "by.id(\"selenium-test-landInformations-Add\")"
+      },
+      "country": {
+        "locator": "by.id(\"selenium-test-countryId\")"
+      },
+      "description": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-description']//textarea\")"
+      },
+      "district": {
+        "locator": "by.id(\"selenium-test-districtId\")"
+      },
+      "edit": {
+        "locator": "by.id(\"docEditButtonId\")"
+      },
+      "estimated market value": {
+        "locator": "by.id(\"selenium-test-estimateMarkedValue\")"
+      },
+      "land information": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-landInformation']//input\")"
+      },
+      "land information table": {
+        "locator": "by.id(\"selenium-test-landInformations\")"
+      },
+      "property type": {
+        "locator": "by.id(\"selenium-test-propertyTypeId\")"
+      },
+      "province": {
+        "locator": "by.id(\"selenium-test-provinceId\")"
+      },
+      "row": {
+        "locator": "by.xpath(\"//*[@id='zw-land-Asset-table-id']/tbody/tr\")"
+      },
+      "ward": {
+        "locator": "by.id(\"selenium-test-wardId\")"
+      }
+    },
+    "legal practitioner certificates": {
+      "add": {
+        "locator": "by.id(\"selenium-test-legalPractitionerCertificatespopupAdd\")"
+      },
+      "cancel": {
+        "locator": "by.id(\"selenium-test-legalPractitionerCertificates-Cancel\")"
+      },
+      "certificate": {
+        "locator": "by.id(\"selenium-test-attachmentId\")"
+      },
+      "confirm": {
+        "locator": "by.id(\"selenium-test-legalPractitionerCertificates-Add\")"
+      },
+      "expiry date": {
+        "locator": "by.id(\"selenium-test-expiryDate\")"
+      },
+      "table": {
+        "locator": "by.id(\"selenium-test-legalPractitionerCertificates\")"
+      }
+    },
+    "legal practitioners": {
+      "add": {
+        "locator": "by.id(\"zw-legal-practitioner-add-button\")"
+      },
+      "cancel": {
+        "locator": "by.id(\"cancelButtonId\")"
+      },
+      "confirm": {
+        "locator": "by.id(\"acceptButtonCreateId\")"
+      },
+      "date of birth registration": {
+        "locator": "by.id(\"party-date-of_birth-id\")"
+      },
+      "email": {
+        "locator": "by.id(\"party-email\")"
+      },
+      "full name": {
+        "locator": "by.id(\"party-full-id\")"
+      },
+      "national id": {
+        "locator": "by.id(\"party-nin-id\")"
+      },
+      "parties table": {
+        "locator": "by.id(\"party-search-table-id\")"
+      },
+      "search": {
+        "locator": "by.id(\"search-button-id\")"
+      },
+      "table": {
+        "locator": "by.id(\"legal-practitioners-table-id\")"
+      }
+    },
+    "movable property": {
+      "add": {
+        "locator": "by.id(\"selenium-test-movablePropertiespopupAdd\")"
+      },
+      "cancel": {
+        "locator": "by.id(\"selenium-test-movableProperties-Cancel\")"
+      },
+      "confirm": {
+        "locator": "by.id(\"selenium-test-movableProperties-Add\")"
+      },
+      "description": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-description']//textarea\")"
+      },
+      "edit": {
+        "locator": "by.id(\"selenium-test-PartyMovableAssets-Edit\")"
+      },
+      "edit movable property": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-PartyMovableAssets']/tbody/tr/td[4]/button\")"
+      },
+      "estimated market value": {
+        "locator": "by.id(\"selenium-test-estimateMarkedValue\")"
+      },
+      "property type": {
+        "locator": "by.id(\"selenium-test-propertyTypeId\")"
+      },
+      "row": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-PartyMovableAssets']/tbody/tr\")"
+      },
+      "table": {
+        "locator": "by.id(\"selenium-test-movableProperties\")"
+      }
+    },
+    "notes": {
+      "add": {
+        "locator": "by.id(\"selenium-test-notespopupAdd\")"
+      },
+      "cancel": {
+        "locator": "by.id(\"selenium-test-notes-Cancel\")"
+      },
+      "confirm": {
+        "locator": "by.id(\"selenium-test-notes-Add\")"
+      },
+      "date added": {
+        "locator": "by.id(\"selenium-test-dateAdded\")"
+      },
+      "edit": {
+        "locator": "by.id(\"selenium-test-PartyDescriptions-Edit\")"
+      },
+      "edit descriptions": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-PartyDescriptions']/tbody/tr/td[3]/button\")"
+      },
+      "note": {
+        "locator": "by.id(\"selenium-test-Note\")"
+      },
+      "row": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-PartyDescriptions']/tbody/tr\")"
+      },
+      "table": {
+        "locator": "by.id(\"selenium-test-notes\")"
+      }
+    },
+    "other assets": {
+      "add": {
+        "locator": "by.id(\"selenium-test-otherAssetspopupAdd\")"
+      },
+      "cancel": {
+        "locator": "by.id(\"selenium-test-otherAssets-Cancel\")"
+      },
+      "confirm": {
+        "locator": "by.id(\"selenium-test-otherAssets-Add\")"
+      },
+      "description": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-description']//textarea\")"
+      },
+      "edit": {
+        "locator": "by.id(\"selenium-test-PartyOtherAssets-Edit\")"
+      },
+      "edit other assets": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-PartyOtherAssets']/tbody/tr/td[4]/button\")"
+      },
+      "other asset": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-otherAsset']//input\")"
+      },
+      "other assets table": {
+        "locator": "by.id(\"selenium-test-otherAssets\")"
+      },
+      "property type": {
+        "locator": "by.id(\"selenium-test-propertyTypeId\")"
+      },
+      "row": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-PartyOtherAssets']/tbody/tr\")"
+      },
+      "value": {
+        "locator": "by.id(\"selenium-test-value\")"
+      }
+    },
+    "related cases": {
+      "related cases table": {
+        "locator": "by.id(\"partyRelatedCasesTableViewID\")"
+      }
+    },
+    "related document": {
+      "add document": {
+        "locator": "by.id(\"selenium-test-relatedDocuments-Add\")"
+      },
+      "attach document": {
+        "locator": "by.id(\"selenium-test-add-new-action-button-relatedDocuments\")"
+      },
+      "cancel": {
+        "locator": "by.id(\"selenium-test-relatedDocuments-Cancel\")"
+      },
+      "edit": {
+        "locator": "by.id(\"PartyDocumentedit-row-id\")"
+      },
+      "row": {
+        "locator": "by.xpath(\"//*[@id='PartyDocument-table']/tbody/tr\")"
+      },
+      "table": {
+        "locator": "by.id(\"ejustice-documents-table-relatedDocuments\")"
+      }
+    },
+    "related user": {
+      "add": {
+        "locator": "by.xpath(\"//party-related-users//button\")"
+      },
+      "cancel": {
+        "locator": "by.id(\"cancelButtonId\")"
+      },
+      "create": {
+        "locator": "by.id(\"acceptButtonCreateId\")"
+      },
+      "date registered": {
+        "locator": "by.id(\"user-date-registered-id\")"
+      },
+      "email address": {
+        "locator": "by.id(\"user-email-id\")"
+      },
+      "first name": {
+        "locator": "by.id(\"user-name-id\")"
+      },
+      "last name": {
+        "locator": "by.id(\"user-lastName-id\")"
+      },
+      "phone number": {
+        "locator": "by.id(\"user-phone-id\")"
+      },
+      "related user table": {
+        "locator": "by.id(\"zw-party-related-user-table-id\")"
+      },
+      "search": {
+        "locator": "by.id(\"search-button-id\")"
+      },
+      "table": {
+        "locator": "by.id(\"partyRelatedCasesTableViewID\")"
+      }
+    },
+    "relatives information": {
+      "add": {
+        "locator": "by.id(\"selenium-test-relativeInformationspopupAdd\")"
+      },
+      "cancel": {
+        "locator": "by.id(\"selenium-test-relativeInformations-Cancel\")"
+      },
+      "confirm": {
+        "locator": "by.id(\"selenium-test-relativeInformations-Add\")"
+      },
+      "date of birth": {
+        "locator": "by.xpath(\"(//*[@id='selenium-test-dateOfBirth'])[2]\")"
+      },
+      "edit": {
+        "locator": "by.id(\"selenium-test-PartyRelatives-Edit\")"
+      },
+      "edit relative information": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-PartyRelatives']/tbody/tr/td[6]/button\")"
+      },
+      "full name": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-fullName']//input\")"
+      },
+      "gender": {
+        "locator": "by.xpath(\"(//*[@id='selenium-test-genderId'])[2]\")"
+      },
+      "national identification number": {
+        "locator": "by.xpath(\"(//input[@id='selenium-test-nationalIdentificationNumber'])[2]\")"
+      },
+      "relation type": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-relationType']//input\")"
+      },
+      "row": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-PartyRelatives']/tbody/tr\")"
+      },
+      "table": {
+        "locator": "by.id(\"selenium-test-relativeInformations\")"
+      }
+    }
+  },
+  "payments": {
+    "actions": {
+      "calculation done": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000059\")"
+      },
+      "confirm payment": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000171\")"
+      },
+      "paid": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000056\")"
+      },
+      "submit": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000055\")"
+      },
+      "submit for calculation": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000058\")"
+      }
+    },
+    "document": {
+      "add document": {
+        "locator": "by.id(\"selenium-test-paymentDocuments-Add\")"
+      },
+      "add signed copy": {
+        "locator": "by.id(\"selenium-test-paymentSignedCopyDocuments-Add\")"
+      },
+      "attach document": {
+        "locator": "by.id(\"selenium-test-add-new-action-button-paymentDocuments\")"
+      },
+      "attach signed copy": {
+        "locator": "by.id(\"add-new-document-paymentSignedCopyDocuments-button-id\")"
+      },
+      "description": {
+        "locator": "by.id(\"selenium-test-description\")"
+      },
+      "table": {
+        "locator": "by.id(\"ejustice-documents-table-paymentDocuments\")"
+      }
+    },
+    "general": {
+      "amount": {
+        "locator": "by.className(\"sis-numeric-input\")"
+      },
+      "amount label": {
+        "locator": "by.id(\"undefined\")"
+      },
+      "amount to be paid": {
+        "locator": "by.id(\"selenium-test-AmountToBePaid-amount-input\")"
+      },
+      "case": {
+        "locator": "by.id(\"selenium-test-case-number-label\")"
+      },
+      "created on behalf of": {
+        "locator": "by.id(\"selenium-test-createdbyId\")"
+      },
+      "document": {
+        "locator": "by.id(\"zw-payment-documents-combo-id\")"
+      },
+      "email": {
+        "locator": "by.id(\"selenium-test-email\")"
+      },
+      "first name": {
+        "locator": "by.xpath(\"//div[@id='selenium-test-firstName']//input\")"
+      },
+      "last name": {
+        "locator": "by.xpath(\"//div[@id='selenium-test-lastName']//input\")"
+      },
+      "national identification number": {
+        "locator": "by.id(\"selenium-test-nationalIdentificationNumber\")"
+      },
+      "party": {
+        "locator": "by.id(\"selenium-test-paymentParties\")"
+      },
+      "paid online": {
+        "locator": "by.id(\"selenium-test-paidOnline\")"
+      },
+      "payer same as party": {
+        "locator": "by.id(\"selenium-test-payerSameasParty\")"
+      },
+      "payment date": {
+        "locator": "by.id(\"selenium-test-paymentDate\")"
+      },
+      "payment due date": {
+        "locator": "by.id(\"selenium-test-paymentDueDate\")"
+      },
+      "payment method": {
+        "locator": "by.id(\"selenium-test-paymentMethodId\")"
+      },
+      "payment reference": {
+        "locator": "by.id(\"selenium-test-internalPaymentReference\")"
+      },
+      "phone number": {
+        "locator": "by.id(\"selenium-test-phoneNumber\")"
+      },
+      "receipt number": {
+        "locator": "by.id(\"selenium-test-receiptNumber\")"
+      },
+      "service paid for": {
+        "locator": "by.id(\"selenium-test-payment-service-paid-for\")"
+      }
+    }
+  },
+  "pleadings": {
+    "actions": {
+      "compliance checked": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000064\")"
+      },
+      "submit": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000028\")"
+      }
+    },
+    "document": {
+      "add document": {
+        "locator": "by.id(\"selenium-test-pleadingDocuments-Add\")"
+      },
+      "add signed copy": {
+        "locator": "by.id(\"selenium-test-pleadingSignedCopyDocuments-Add\")"
+      },
+      "attach document": {
+        "locator": "by.id(\"selenium-test-add-new-action-button-pleadingDocuments\")"
+      },
+      "attach signed copy": {
+        "locator": "by.id(\"add-new-document-pleadingSignedCopyDocuments-button-id\")"
+      },
+      "table": {
+        "locator": "by.id(\"ejustice-documents-table-pleadingDocuments\")"
+      }
+    },
+    "general": {
+      "acquitted convicted": {
+        "locator": "by.id(\"selenium-test-acquittedConvictedTypeId\")"
+      },
+      "address of service": {
+        "locator": "by.id(\"selenium-test-AddressofServiceId\")"
+      },
+      "appeal against civil": {
+        "locator": "by.id(\"selenium-test-appealAgainstCivilId\")"
+      },
+      "appearance to defend date": {
+        "locator": "by.id(\"selenium-test-appearanceToDefendDate-date\")"
+      },
+      "appellant is in custody": {
+        "locator": "by.id(\"selenium-test-appellantisincustody\")"
+      },
+      "appellant wishes to appeal against": {
+        "locator": "by.id(\"selenium-test-appellantWishestoAppealAgainstId\")"
+      },
+      "court of conviction": {
+        "locator": "by.id(\"selenium-test-zw-filtered-organization-control\")"
+      },
+      "created on behalf of": {
+        "locator": "by.id(\"selenium-test-createdbyId\")"
+      },
+      "date": {
+        "locator": "by.id(\"selenium-test-date\")"
+      },
+      "date of conviction": {
+        "locator": "by.id(\"selenium-test-dateofConviction\")"
+      },
+      "date of delivery to registrar": {
+        "locator": "by.id(\"selenium-test-dateOfDeliveryToRegistrar\")"
+      },
+      "date of delivery to registrar of lower court": {
+        "locator": "by.id(\"selenium-test-dateOfDeliveryToRegistrarOfLowerCourt\")"
+      },
+      "details": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-Details']//textarea\")"
+      },
+      "grounds of appeal": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-groundsofAppeal']//textarea\")"
+      },
+      "grounds of exception": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-groundsOfException']//textarea\")"
+      },
+      "judgment date": {
+        "locator": "by.id(\"selenium-test-judgementSentenceDate\")"
+      },
+      "leave to appeal granted by lower court": {
+        "locator": "by.id(\"selenium-test-leavetoAppealGrantedbyLowerCourtId\")"
+      },
+      "leave to appeal granted on": {
+        "locator": "by.id(\"selenium-test-leavetoAppealGrantedon\")"
+      },
+      "offence": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-offence']//input\")"
+      },
+      "order appealed against": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-otherOrder']//textarea\")"
+      },
+      "party": {
+        "locator": "by.id(\"selenium-test-pleadingParties\")"
+      },
+      "pleading date": {
+        "locator": "by.id(\"selenium-test-pleadingDate\")"
+      },
+      "prison address": {
+        "locator": "by.id(\"selenium-test-prisonAddress\")"
+      },
+      "sentence": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-sentence']//input\")"
+      },
+      "sentence date": {
+        "locator": "by.id(\"selenium-test-judgementSentenceDate\")"
+      },
+      "served date": {
+        "locator": "by.id(\"selenium-test-summonsWereServedDate\")"
+      },
+      "summary of answering affidavit": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-summaryOfHeadsOfArgument']//textarea\")"
+      },
+      "summary of heads of argument": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-summaryOfHeadsOfArgument']//textarea\")"
+      },
+      "summons were served date": {
+        "locator": "by.id(\"selenium-test-summonsWereServedDate\")"
+      }
+    },
+    "take notice that": {
+      "add": {
+        "locator": "by.id(\"selenium-test-pleadingNoticespopupAdd\")"
+      },
+      "cancel": {
+        "locator": "by.id(\"selenium-test-pleadingNotices-Cancel\")"
+      },
+      "confirm": {
+        "locator": "by.id(\"selenium-test-pleadingNotices-Add\")"
+      },
+      "notice": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-notice']//textarea\")"
+      },
+      "table": {
+        "locator": "by.id(\"selenium-test-pleadingNotices\")"
+      }
+    }
+  },
+  "popup": {
+    "dialog": {
+      "approve": {
+        "locator": "by.id(\"selenium-test-approve-button\")"
+      },
+      "confirm": {
+        "locator": "by.id(\"selenium-test-confirm\")"
+      },
+      "confirmation dialog": {
+        "locator": "by.tagName(\"confirmation-dialog\")"
+      },
+      "lock message": {
+        "locator": "by.className(\"sis-warning-page-form__field\")"
+      },
+      "material dialog": {
+        "locator": "by.tagName(\"mat-dialog-container\")"
+      },
+      "ok": {
+        "locator": "by.id(\"selenium-test-approveButton\")"
+      },
+      "select sub type": {
+        "locator": "by.id(\"selenium-test-select-entity-sub-type\")"
+      },
+      "select type": {
+        "locator": "by.id(\"selenium-test-select-entity-type\")"
+      },
+      "validate party": {
+        "locator": "by.xpath(\"//*[@class='cdk-overlay-container']/div/div\")"
+      },
+      "yes": {
+        "locator": "by.id(\"yesButtonId\")"
+      }
+    },
+    "table": {
+      "empty row": {
+        "locator": "by.id(\"selenium-test-empty-table-row\")"
+      }
+    }
+  },
+  "portfolio": {
+    "banner": {
+      "create": {
+        "locator": "by.id(\"zw-create-id\")"
+      },
+      "create new": {
+        "locator": "by.id(\"createnew\")"
+      },
+      "create new case": {
+        "locator": "by.id(\"create_new_case\")"
+      },
+      "logout": {
+        "locator": "by.id(\"selenium-test-user-logout\")"
+      },
+      "system account": {
+        "locator": "by.id(\"selenium-test-user-full-name\")"
+      }
+    },
+    "filters": {
+      "case category": {
+        "locator": "by.id(\"dynamic-filter-CaseCategoryID\")"
+      },
+      "case number": {
+        "locator": "by.id(\"dynamic-filter-Case.caseNumber\")"
+      },
+      "filing date": {
+        "locator": "by.id(\"dynaasdasdryID\")"
+      },
+      "filter": {
+        "locator": "by.className(\"sis-portfolio-toolbar__action\")"
+      },
+      "instance level": {
+        "locator": "by.id(\"dynamic-filter-InstanceLevelID\")"
+      },
+      "request number": {
+        "locator": "by.id(\"dynamic-filter-courtRequest.requestNumber\")"
+      },
+      "reset": {
+        "locator": "by.id(\"selenium-test-dynamic-filter-reset\")"
+      },
+      "search": {
+        "locator": "by.id(\"selenium-test-dynamic-filter-search\")"
+      },
+      "submission date": {
+        "locator": "by.id(\"dynaasdasdryID\")"
+      }
+    },
+    "portfolio": {
+      "cases": {
+        "locator": "by.tagName(\"mat-table\")"
+      },
+      "mat table": {
+        "locator": "by.xpath(\"/html/body/sis-app/ng-component/sis-shell-container/div[2]/mat-sidenav-container/mat-sidenav-content/zw-court-sitting-portfolio/div/div[2]/sis-dynamic-portfolio/mat-card/mat-drawer-container/mat-drawer-content/div/mat-table\")"
+      },
+      "table": {
+        "locator": "by.className(\"sis-portfolio-table\")"
+      }
+    }
+  },
+  "scheduler": {
+    "calendar": {
+      "add appointment attendees": {
+        "locator": "by.id(\"zw-appointment-participant-add-button\")"
+      },
+      "add attendees": {
+        "locator": "by.id(\"acceptButtonCreateId\")"
+      },
+      "appointment attendees": {
+        "locator": "by.id(\"selenium-test-appointmentAttendees--1-0\")"
+      },
+      "attendees": {
+        "locator": "by.id(\"selenium-test-toDoAttendees--1-0\")"
+      },
+      "attendees table": {
+        "locator": "by.id(\"zw-appointment-participant-table-id\")"
+      },
+      "availability table": {
+        "locator": "by.id(\"zw-availability-table-id\")"
+      },
+      "calendar": {
+        "locator": "by.xpath(\"//*[@id='calendar']\")"
+      },
+      "completion status": {
+        "locator": "by.id(\"selenium-test-completionStatusId\")"
+      },
+      "court": {
+        "locator": "by.id(\"zw-main1-participant-id\")"
+      },
+      "court level": {
+        "locator": "by.id(\"selenium-test-court-type-filter\")"
+      },
+      "court room": {
+        "locator": "by.id(\"selenium-test-RoomID\")"
+      },
+      "create": {
+        "locator": "by.id(\"create_calendar_event_action\")"
+      },
+      "create new": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-appointment-create-new']/span\")"
+      },
+      "create new appointment": {
+        "locator": "by.xpath(\"//*[@id='cdk-overlay-0']/div/div/button[1]\")"
+      },
+      "create new general holiday": {
+        "locator": "by.xpath(\"//*[@id='cdk-overlay-0']/div/div/button[1]\")"
+      },
+      "current date": {
+        "locator": "by.className(\"mat-calendar-body-cell-content mat-calendar-body-today\")"
+      },
+      "days of week": {
+        "locator": "by.id(\"selenium-test-DayOfWeekIDs-multiselect\")"
+      },
+      "description": {
+        "locator": "by.id(\"selenium-test-Description\")"
+      },
+      "end date": {
+        "locator": "by.id(\"selenium-test-EndDate-date\")"
+      },
+      "end time": {
+        "locator": "by.id(\"sis-time-picker-selenium-test-EndDate-time\")"
+      },
+      "month": {
+        "locator": "by.id(\"selenium-test-MonthOfYearID\")"
+      },
+      "name": {
+        "locator": "by.id(\"user-name-id\")"
+      },
+      "navigator": {
+        "locator": "by.xpath(\"/html/body/sis-app/ng-component/sis-shell-container/div[2]/mat-sidenav-container/mat-sidenav[2]/zw-scheduler-container/mat-drawer-container/mat-drawer-content/div/zw-scheduler/div/div[1]/div[1]/button\")"
+      },
+      "participants table": {
+        "locator": "by.id(\"zw-appointment-participants-dialog-table-id\")"
+      },
+      "priority": {
+        "locator": "by.id(\"selenium-test-PriorityID\")"
+      },
+      "record": {
+        "locator": "by.className(\"k-today\")"
+      },
+      "recurrence end date": {
+        "locator": "by.id(\"selenium-test-RecurrenceEndDate\")"
+      },
+      "recurrence type": {
+        "locator": "by.id(\"selenium-test-RecurrenceTypeID\")"
+      },
+      "refresh": {
+        "locator": "by.className(\"zw-scheduler__button mat-icon-button ng-star-inserted\")"
+      },
+      "repeat on": {
+        "locator": "by.id(\"selenium-test-RecurrenceAlgoritmTypeID\")"
+      },
+      "search": {
+        "locator": "by.id(\"search-button-id\")"
+      },
+      "select": {
+        "locator": "by.id(\"linkId\")"
+      },
+      "show availability": {
+        "locator": "by.id(\"show-availability-id\")"
+      },
+      "start date": {
+        "locator": "by.id(\"selenium-test-StartDate-date\")"
+      },
+      "start time": {
+        "locator": "by.id(\"sis-time-picker-selenium-test-StartDate-time\")"
+      },
+      "subject": {
+        "locator": "by.id(\"selenium-test-Subject\")"
+      },
+      "three dots": {
+        "locator": "by.className(\"zw-scheduler__header-button mat-icon-button ng-star-inserted\")"
+      }
+    }
+  },
+  "sessions": {
+    "actions": {
+      "complete": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000077\")"
+      },
+      "completed": {
+        "locator": "by.id(\"workflow-action-submit-button\")"
+      },
+      "schedule": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000052\")"
+      },
+      "session in progress": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000076\")"
+      },
+      "session outcome details": {
+        "locator": "by.id(\"selenium-test-sessionOutcomeDetailsId\")"
+      },
+      "session outcome type": {
+        "locator": "by.id(\"selenium-test-sessionOutcomeTypeId\")"
+      }
+    },
+    "adjourned sessions": {
+      "adjourned session": {
+        "locator": "by.className(\"zw-case-application-info\")"
+      },
+      "choose": {
+        "locator": "by.xpath(\"(//*[@id='selenium-test-adjournedSessions']//button)[2]\")"
+      },
+      "empty row": {
+        "locator": "by.xpath(\"//*[@class='zw-select-entity-table']//tr/td/span\")"
+      },
+      "hearing date": {
+        "locator": "by.id(\"requestDate\")"
+      },
+      "search": {
+        "locator": "by.id(\"yesButtonId\")"
+      },
+      "select": {
+        "locator": "by.id(\"selectButtonId\")"
+      },
+      "session number": {
+        "locator": "by.xpath(\"(//*[@class='zw-select-entity-grid__col']//input)[1]\")"
+      },
+      "table": {
+        "locator": "by.className(\"zw-select-entity-table\")"
+      }
+    },
+    "document": {
+      "add document": {
+        "locator": "by.id(\"selenium-test-sessionDocuments-Add\")"
+      },
+      "add signed copy": {
+        "locator": "by.id(\"selenium-test-sessionSignedCopyDocuments-Add\")"
+      },
+      "attach document": {
+        "locator": "by.id(\"selenium-test-add-new-action-button-sessionDocuments\")"
+      },
+      "attach signed copy": {
+        "locator": "by.id(\"add-new-document-sessionSignedCopyDocuments-button-id\")"
+      },
+      "table": {
+        "locator": "by.id(\"ejustice-documents-table-sessionDocuments\")"
+      }
+    },
+    "general": {
+      "additional summaries of evidence": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-additionalSummariesOfEvidence']//textarea\")"
+      },
+      "availability table": {
+        "locator": "by.id(\"sis-availability-table-id\")"
+      },
+      "case management meeting minutes rules": {
+        "locator": "by.id(\"selenium-test-caseManagementRules-multiselect\")"
+      },
+      "date session created": {
+        "locator": "by.id(\"selenium-test-dateSessionScheduled\")"
+      },
+      "details": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-details']//textarea\")"
+      },
+      "directions given by the court": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-details']//textarea\")"
+      },
+      "duration of trial in days": {
+        "locator": "by.id(\"selenium-test-durationOfTrialInDays\")"
+      },
+      "estimated duration (in hours)": {
+        "locator": "by.id(\"selenium-test-estimatedDuration\")"
+      },
+      "interpreter details": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-interpreterDetails']//textarea\")"
+      },
+      "is online": {
+        "locator": "by.id(\"selenium-test-isOnline\")"
+      },
+      "is public": {
+        "locator": "by.id(\"selenium-test-isPublic\")"
+      },
+      "required court staff": {
+        "locator": "by.id(\"selenium-test-requiredCourtStaffId\")"
+      },
+      "select type": {
+        "locator": "by.id(\"selenium-test-select-entity-type\")"
+      },
+      "session date": {
+        "locator": "by.id(\"selenium-test-sessionDate-date\")"
+      },
+      "session participants": {
+        "locator": "by.id(\"selenium-test-sessionParticipants\")"
+      },
+      "session participants presented": {
+        "locator": "by.id(\"selenium-test-sessionParticipantsPresented\")"
+      },
+      "show availability": {
+        "locator": "by.id(\"selenium-test-showAvailability\")"
+      }
+    },
+    "joint agreed issues": {
+      "add": {
+        "locator": "by.id(\"selenium-test-jointAgreedIssuespopupAdd\")"
+      },
+      "cancel": {
+        "locator": "by.id(\"selenium-test-jointAgreedIssues-Cancel\")"
+      },
+      "confirm": {
+        "locator": "by.id(\"selenium-test-jointAgreedIssues-Add\")"
+      },
+      "joint agreed issue": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-jointAgreedIssue']//textarea\")"
+      },
+      "table": {
+        "locator": "by.id(\"selenium-test-jointAgreedIssues\")"
+      }
+    }
+  },
+  "sheriff requests": {
+    "actions": {
+      "delivered": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000071\")"
+      },
+      "payment confirmed": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000070\")"
+      },
+      "proceed to payment": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000069\")"
+      },
+      "submit": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000068\")"
+      }
+    },
+    "document": {
+      "add document": {
+        "locator": "by.id(\"selenium-test-sheriffRequestDocuments-Add\")"
+      },
+      "add signed copy": {
+        "locator": "by.id(\"selenium-test-sheriffRequestSignedCopyDocuments-Add\")"
+      },
+      "attach document": {
+        "locator": "by.id(\"selenium-test-add-new-action-button-sheriffRequestDocuments\")"
+      },
+      "attach signed copy": {
+        "locator": "by.id(\"add-new-document-sheriffRequestSignedCopyDocuments-button-id\")"
+      },
+      "table": {
+        "locator": "by.id(\"ejustice-documents-table-sheriffRequestDocuments\")"
+      }
+    },
+    "general": {
+      "created on behalf of": {
+        "locator": "by.id(\"selenium-test-createdbyId\")"
+      },
+      "request date": {
+        "locator": "by.id(\"selenium-test-requestDate-date\")"
+      },
+      "select type": {
+        "locator": "by.id(\"selenium-test-select-entity-type\")"
+      },
+      "to be delivered by": {
+        "locator": "by.id(\"selenium-test-toBeDeliveredBy-date\")"
+      }
+    },
+    "sheriff request participants": {
+      "add": {
+        "locator": "by.id(\"selenium-test-sheriffRequestRecipientspopupAdd\")"
+      },
+      "cancel": {
+        "locator": "by.id(\"selenium-test-sheriffRequestRecipients-Cancel\")"
+      },
+      "confirm": {
+        "locator": "by.id(\"selenium-test-sheriffRequestRecipients-Add\")"
+      },
+      "party": {
+        "locator": "by.id(\"selenium-test-SheriffRequest\")"
+      },
+      "table": {
+        "locator": "by.id(\"selenium-test-sheriffRequestRecipients\")"
+      }
+    }
+  },
+  "summons": {
+    "actions": {
+      "compliance checked": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000032\")"
+      },
+      "submit": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000031\")"
+      }
+    },
+    "document": {
+      "add document": {
+        "locator": "by.id(\"selenium-test-summonDocuments-Add\")"
+      },
+      "add signed copy": {
+        "locator": "by.id(\"selenium-test-summonSignedCopyDocuments-Add\")"
+      },
+      "attach document": {
+        "locator": "by.id(\"selenium-test-add-new-action-button-summonDocuments\")"
+      },
+      "attach signed copy": {
+        "locator": "by.id(\"add-new-document-summonSignedCopyDocuments-button-id\")"
+      },
+      "table": {
+        "locator": "by.id(\"ejustice-documents-table-summonDocuments\")"
+      }
+    },
+    "general": {
+      "created on behalf of": {
+        "locator": "by.id(\"selenium-test-createdbyId\")"
+      },
+      "details": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-details']//textarea\")"
+      },
+      "party": {
+        "locator": "by.id(\"selenium-test-summonParties\")"
+      },
+      "summary of claim": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-summaryOfClaim']//textarea\")"
+      },
+      "summon date": {
+        "locator": "by.id(\"selenium-test-summonDate\")"
+      }
+    }
+  },
+  "tasks": {
+    "actions": {
+      "complete": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000049\")"
+      },
+      "submit": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000048\")"
+      }
+    },
+    "document": {
+      "add document": {
+        "locator": "by.id(\"selenium-test-taskDocuments-Add\")"
+      },
+      "add signed copy": {
+        "locator": "by.id(\"selenium-test-taskSignedCopyDocuments-Add\")"
+      },
+      "attach document": {
+        "locator": "by.id(\"selenium-test-add-new-action-button-taskDocuments\")"
+      },
+      "attach signed copy": {
+        "locator": "by.id(\"add-new-document-taskSignedCopyDocuments-button-id\")"
+      },
+      "table": {
+        "locator": "by.id(\"ejustice-documents-table-taskDocuments\")"
+      }
+    },
+    "general": {
+      "actual start date": {
+        "locator": "by.id(\"selenium-test-actualStartDate\")"
+      },
+      "created on behalf of": {
+        "locator": "by.id(\"selenium-test-createdById\")"
+      },
+      "date completed": {
+        "locator": "by.id(\"selenium-test-dateCompleted\")"
+      },
+      "description": {
+        "locator": "by.id(\"selenium-test-taskDescription\")"
+      },
+      "requested end date": {
+        "locator": "by.id(\"selenium-test-requestedEndDate\")"
+      },
+      "requested start date": {
+        "locator": "by.id(\"selenium-test-requestedStartDate\")"
+      },
+      "task details": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-taskDetails']//textarea\")"
+      },
+      "task responsibles": {
+        "locator": "by.id(\"selenium-test-taskResponsiblesId\")"
+      }
+    }
+  },
+  "warrants": {
+    "actions": {
+      "signed": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000041\")"
+      },
+      "submit": {
+        "locator": "by.id(\"selenium-test--view-workfactions-1000040\")"
+      }
+    },
+    "document": {
+      "add document": {
+        "locator": "by.id(\"selenium-test-warrantDocuments-Add\")"
+      },
+      "add signed copy": {
+        "locator": "by.id(\"selenium-test-warrantSignedCopyDocuments-Add\")"
+      },
+      "attach document": {
+        "locator": "by.id(\"selenium-test-add-new-action-button-warrantDocuments\")"
+      },
+      "attach signed copy": {
+        "locator": "by.id(\"add-new-document-warrantSignedCopyDocuments-button-id\")"
+      },
+      "table": {
+        "locator": "by.id(\"ejustice-documents-table-warrantDocuments\")"
+      }
+    },
+    "general": {
+      "additional charges": {
+        "locator": "by.id(\"selenium-test-additionalCharges\")"
+      },
+      "amount to pay with one sureties": {
+        "locator": "by.id(\"selenium-test-amounttoPaywithOneSurety\")"
+      },
+      "amount to pay with two sureties": {
+        "locator": "by.id(\"selenium-test-amounttoPaywithTwoSureties\")"
+      },
+      "appear before court date": {
+        "locator": "by.id(\"selenium-test-appearBeforeCourtDateTime-date\")"
+      },
+      "created on behalf of": {
+        "locator": "by.id(\"selenium-test-createdbyId\")"
+      },
+      "date to attend before the court": {
+        "locator": "by.id(\"selenium-test-datetoAttendBeforetheCourt\")"
+      },
+      "description of the premises": {
+        "locator": "by.id(\"selenium-test-descriptionOfThePremises\")"
+      },
+      "details": {
+        "locator": "by.id(\"details-Id\")"
+      },
+      "ejection date": {
+        "locator": "by.id(\"selenium-test-ejectionDate\")"
+      },
+      "fine amount": {
+        "locator": "by.id(\"selenium-test-fineAmount\")"
+      },
+      "imprisonment period": {
+        "locator": "by.id(\"selenium-test-imprisonmentPeriod\")"
+      },
+      "interest on taxed costs": {
+        "locator": "by.id(\"selenium-test-interestOnTaxedCosts\")"
+      },
+      "interest rate": {
+        "locator": "by.id(\"selenium-test-interestRate\")"
+      },
+      "issue date": {
+        "locator": "by.id(\"issue-date-id-date\")"
+      },
+      "issued by": {
+        "locator": "by.id(\"zw-issued-by-id\")"
+      },
+      "keep at prison untill": {
+        "locator": "by.id(\"selenium-test-keepAtPrisonUntillId\")"
+      },
+      "order review date": {
+        "locator": "by.id(\"selenium-test-orderReviewDate\")"
+      },
+      "party": {
+        "locator": "by.id(\"selenium-test-personsTobeArrested\")"
+      },
+      "payments' start date": {
+        "locator": "by.id(\"selenium-test-paymentsStartDate\")"
+      },
+      "persons to execute": {
+        "locator": "by.id(\"selenium-test-personsToExecuteId\")"
+      },
+      "prison address": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-prisonAddress']//input\")"
+      },
+      "prison name": {
+        "locator": "by.xpath(\"//*[@id='selenium-test-prisonName']//input\")"
+      },
+      "property sale date": {
+        "locator": "by.id(\"selenium-test-propertySaleDate\")"
+      },
+      "recipients": {
+        "locator": "by.id(\"recipients-id\")"
+      },
+      "select type": {
+        "locator": "by.id(\"selenium-test-select-entity-type\")"
+      },
+      "sheriffs return on the writ against movables": {
+        "locator": "by.id(\"selenium-test-sheriffsReturnOnTheWritAgainstMovables\")"
+      },
+      "taxed costs and charges": {
+        "locator": "by.id(\"selenium-test-taxedCostsAndCharges\")"
+      },
+      "the description of the immovable property": {
+        "locator": "by.id(\"selenium-test-theDescriptionoftheImmovableProperty\")"
+      },
+      "the description of the movable property": {
+        "locator": "by.id(\"selenium-test-theDescriptionOfTheMovableProperty\")"
+      },
+      "the description of the property premises": {
+        "locator": "by.id(\"selenium-test-TheDescriptionOfTheProperty\")"
+      },
+      "the property's transfer date": {
+        "locator": "by.id(\"selenium-test-thePropertysTransferDate\")"
+      },
+      "the sum for damages": {
+        "locator": "by.id(\"selenium-test-theSumForDamages\")"
+      },
+      "the sum of the property": {
+        "locator": "by.id(\"selenium-test-theSumoftheproperty\")"
+      },
+      "the taxed costs of this writ": {
+        "locator": "by.id(\"selenium-test-theTaxedCostsOfThisWrit\")"
+      },
+      "type": {
+        "locator": "by.id(\"zw-warrant-type-id\")"
+      },
+      "type label": {
+        "locator": "by.xpath(\"(//*[@id='selenium-test-']/div/div[1]/div[1]/text())[5]\")"
+      },
+      "warrant date": {
+        "locator": "by.id(\"selenium-test-warrantDate\")"
+      },
+      "warrant sub type": {
+        "locator": "by.id(\"selenium-test-warrantSubTypeId\")"
+      },
+      "writ cost": {
+        "locator": "by.id(\"selenium-test-writCost\")"
+      }
+    }
+  },
+  "workflow": {
+    "actions": {
+      "action comment": {
+        "locator": "by.id(\"wf-action-comment-id\")"
+      },
+      "actions": {
+        "locator": "by.id(\"selenium-test--view-workfactions-primary\")"
+      },
+      "complete": {
+        "locator": "by.id(\"selenium-test--workfactions-50\")"
+      },
+      "confirm": {
+        "locator": "by.id(\"selenium-test--workfactions-48\")"
+      },
+      "create task": {
+        "locator": "by.id(\"selenium-test-create-task\")"
+      },
+      "current state name": {
+        "locator": "by.xpath(\"//*[@class='dc-subway__current-state ng-star-inserted']/div\")"
+      },
+      "future state": {
+        "locator": "by.className(\"dc-subway__future-state\")"
+      },
+      "pay online": {
+        "locator": "by.id(\"selenium-test--pay-online-button\")"
+      },
+      "previous state": {
+        "locator": "by.className(\"dc-subway__prev-state\")"
+      }
+    }
+  }
+}

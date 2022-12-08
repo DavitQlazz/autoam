@@ -1,0 +1,14 @@
+{
+  "Administrator": {
+    "login": "admin",
+    "password": "123456"
+  },
+  "Automation user": {
+    "login": "sisautousertest",
+    "password": "sisAutoUserTest1!"
+  },
+  "Public user": {
+    "login": "sis_auto_public_user_test@synisys.com",
+    "password": "sisAutoPublicUserTest1!"
+  }
+}

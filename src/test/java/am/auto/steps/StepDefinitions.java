@@ -1,5 +1,6 @@
 package am.auto.steps;
 
+import com.codeborne.selenide.Condition;
 import elements.HomePageElements;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -9,11 +10,9 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-import static elements.Element.find;
-import static elements.Elements.findAll;
+import static com.codeborne.selenide.Selenide.*;
 import static hooks.SetUp.SOFT;
 import static java.util.stream.Collectors.toList;
-import static utils.BaseUtils.open;
 
 public class StepDefinitions extends HomePageElements {
     @Given("the {string} page")
@@ -23,59 +22,57 @@ public class StepDefinitions extends HomePageElements {
 
     @And("a cancel the notification popup")
     public void aCancelTheNotificationPopup() {
-        find(popupCancelButton).click();
+        $(popupCancelButton).click();
     }
 
     @When("I select {string} as a car brand")
     public void iSelectAsACarBrand(String text) {
-        find(makeFilter).selectByText(text);
+        $(makeFilter).selectOption(text);
     }
 
     @And("apply the filter")
     public void applyTheFilter() {
-        find(searchButton).click();
+        $(searchButton).click();
     }
 
     @Then("I should see only the {string} brand cars on the search result")
     public void iShouldSeeThe(String text) {
-        findAll(resultTitles)
-                .all()
-                .forEach(el -> SOFT.get().assertThat(el.getText()).contains(text));
+        $$(resultTitles)
+                .forEach(el -> SOFT.get().assertThat(el.text()).contains(text));
         SOFT.get().assertAll();
     }
 
     @When("I set the upper bound of price to {int} dollar")
     public void iSetTheUpperBoundOfPriceToDollars(Integer price) {
-        find(priceMaxFilter).selectByText("$" + price);
+        $(priceMaxFilter).shouldHave(Condition.text("$" + price));
     }
 
     @Then("the count of items should appear on the blue button")
     public void theCountOfItemsAppearedOnBlueButton() {
-        find(applyButton).containsPositiveInteger();
+        $(applyButton).shouldHave(Condition.visible);
     }
 
     @When("I navigate to the search result last page")
     public void iOpenTheLastPage() {
-        String text = find(lastPage).text();
-        find(lastPage)
+        String text = $(lastPage).text();
+        $(lastPage)
                 .scrollTo()
                 .click();
-        find(activePage).waitForText(text);
+        $(activePage).shouldHave(Condition.text(text));
     }
 
     @Then("I should see that the number of elements corresponds to the value of the blue button")
     public void iAssumedThatTheNumberOfElementsCorrespondsToTheValueOfTheBlueButton() {
-        int itemCount = Integer.parseInt(find(applyButton).text().split(" ")[1]);
-        int lastPageItemCount = findAll(priceTag).count();
-        int pageCount = Integer.parseInt(find(activePage).text());
+        int itemCount = Integer.parseInt($(applyButton).text().split(" ")[1]);
+        int lastPageItemCount = $$(priceTag).size();
+        int pageCount = Integer.parseInt($(activePage).text());
         SOFT.get().assertThat(50 * (pageCount - 1) + lastPageItemCount).isEqualTo(itemCount);
         SOFT.get().assertAll();
     }
 
     @Then("price of all the items in the search results should be less than {int} dollar")
     public void priceOfAllTheProductsInTheSearchResultsShouldBeLessThan(Integer price) {
-        List<Integer> tags = findAll(priceTag)
-                .all()
+        List<Integer> tags = $$(priceTag)
                 .stream()
                 .map(WebElement::getText)
                 .takeWhile(el -> el.contains("$"))

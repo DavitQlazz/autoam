@@ -1,38 +1,42 @@
 package hooks;
 
+import com.codeborne.selenide.Browsers;
+import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.assertj.core.api.SoftAssertions;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+import static com.codeborne.selenide.Browsers.*;
 
 public class SetUp {
 
-    public static final ThreadLocal<WebDriver> DRIVERS =
-            ThreadLocal.withInitial(SetUp::createChromeDriver);
     public static final ThreadLocal<SoftAssertions> SOFT =
             ThreadLocal.withInitial(SoftAssertions::new);
 
     @Before
     public static void before(Scenario scenario) {
         System.out.println("Start " + scenario.getName());
+        DesiredCapabilities caps = new DesiredCapabilities();
+        caps.setVersion("105.0");
+        caps.setCapability("enableVNC", true);
+        caps.setCapability("enableVideo", false);
+
+        Configuration.browser = CHROME;
+        Configuration.timeout = 40000;
+        Configuration.baseUrl = "https://zimiecms.synisys.com/zwe-dev/login";
+        Configuration.browserSize = "1920x1080";
+
+//        Configuration.browserVersion = "105";
+//        Configuration.driverManagerEnabled = false;
+//        Configuration.remote = "http://selenium:123456@172.17.17.114:4444/wd/hub";
+//        Configuration.browserCapabilities = caps;
     }
 
     @After
     public static void tearDown() {
-        DRIVERS.get().quit();
-        DRIVERS.remove();
-    }
-
-    private static WebDriver createChromeDriver() {
-        WebDriverManager.chromedriver().setup();
-        ChromeOptions options = new ChromeOptions().setHeadless(false);
-        ChromeDriver chromeDriver = new ChromeDriver(options);
-        chromeDriver.manage().window().setSize(new Dimension(1400, 900));
-        return chromeDriver;
+        Selenide.closeWebDriver();
     }
 }

@@ -1,0 +1,256 @@
+{
+  "group": {
+    "add group": {
+      "locator": "by.className(\"test-selenium-add-group\")"
+    },
+    "back": {
+      "locator": "by.className(\"test-selenium-back-group\")"
+    },
+    "description": {
+      "locator": "by.id(\"DESCRIPTION\")"
+    },
+    "filter by organization": {
+      "locator": "by.id(\"organization\")"
+    },
+    "name": {
+      "locator": "by.id(\"name\")"
+    },
+    "organization": {
+      "locator": "by.id(\"groupOrganization\")"
+    },
+    "reset": {
+      "locator": "by.className(\"test-selenium-reset-group\")"
+    },
+    "roles": {
+      "locator": "by.id(\"group_roles\")"
+    },
+    "save": {
+      "locator": "by.className(\"test-selenium-save-group\")"
+    },
+    "search": {
+      "locator": "by.className(\"test-selenium-search-box\")"
+    },
+    "table": {
+      "locator": "by.id(\"test-selenium-group-table\")"
+    },
+    "users": {
+      "locator": "by.id(\"group_users\")"
+    }
+  },
+  "organization": {
+    "access rights": {
+      "locator": "by.className(\"sis-hierarchy\")"
+    },
+    "add organization": {
+      "locator": "by.className(\"test-selenium-add-organization\")"
+    },
+    "back": {
+      "locator": "by.className(\"sis-button-back\")"
+    },
+    "categories": {
+      "locator": "by.className(\"sis-hierarchy\")"
+    },
+    "description": {
+      "locator": "by.id(\"DESCRIPTION\")"
+    },
+    "district": {
+      "locator": "by.id(\"LOCATION3ID\")"
+    },
+    "households": {
+      "locator": "by.id(\"test-selenium-Households-category-permission\")"
+    },
+    "managing organization": {
+      "locator": "by.id(\"parentOrganization\")"
+    },
+    "name": {
+      "locator": "by.id(\"name\")"
+    },
+    "navigation": {
+      "locator": "by.className(\"sis-hierarchy\")"
+    },
+    "navigation tab": {
+      "locator": "by.className(\"mat-tab-group\")"
+    },
+    "organization": {
+      "locator": "By.tagName(\"sis-tree\")"
+    },
+    "person": {
+      "locator": "by.id(\"test-selenium-Person-category-permission\")"
+    },
+    "reset": {
+      "locator": "by.className(\"test-selenium-reset-organization\")"
+    },
+    "save": {
+      "locator": "by.className(\"test-selenium-save-organization\")"
+    },
+    "upazila": {
+      "locator": "by.id(\"LOCATION5ID\")"
+    }
+  },
+  "role": {
+    "access rights": {
+      "locator": "by.className(\"sis-hierarchy\")"
+    },
+    "add role": {
+      "locator": "by.className(\"test-selenium-add-role\")"
+    },
+    "back": {
+      "locator": "by.className(\"test-selenium-back-role\")"
+    },
+    "categories": {
+      "locator": "by.className(\"sis-hierarchy\")"
+    },
+    "description": {
+      "locator": "by.id(\"DESCRIPTION\")"
+    },
+    "filter by organization": {
+      "locator": "by.id(\"organization\")"
+    },
+    "households": {
+      "locator": "by.id(\"test-selenium-Households-category-permission\")"
+    },
+    "name": {
+      "locator": "by.id(\"name\")"
+    },
+    "navigation": {
+      "locator": "by.className(\"sis-hierarchy\")"
+    },
+    "navigation tab": {
+      "locator": "by.className(\"mat-tab-group\")"
+    },
+    "organisational level": {
+      "locator": "by.id(\"roleOrganization\")"
+    },
+    "person": {
+      "locator": "by.id(\"test-selenium-Person-category-permission\")"
+    },
+    "reset": {
+      "locator": "by.className(\"test-selenium-reset-role\")"
+    },
+    "save": {
+      "locator": "by.className(\"test-selenium-save-role\")"
+    },
+    "search": {
+      "locator": "by.className(\"test-selenium-search-box\")"
+    },
+    "table": {
+      "locator": "by.id(\"test-selenium-roles-table\")"
+    },
+    "upazilla": {
+      "locator": "by.id(\"test-selenium-Upazilla-category-permission\")"
+    }
+  },
+  "user": {
+    "2fa status": {
+      "locator": "by.id(\"twofa-status\")"
+    },
+    "2fa type": {
+      "locator": "by.id(\"twofa-type\")"
+    },
+    "abbreviation": {
+      "locator": "by.id(\"Abbreviation\")"
+    },
+    "accept terms and conditions": {
+      "locator": "by.id(\"AcceptTermsAndConditions\")"
+    },
+    "address": {
+      "locator": "by.id(\"Address\")"
+    },
+    "add user": {
+      "locator": "by.className(\"test-selenium-add-user\")"
+    },
+    "answer": {
+      "locator": "by.id(\"securityAnswer\")"
+    },
+    "back": {
+      "locator": "by.className(\"test-selenium-back-user\")"
+    },
+    "comment": {
+      "locator": "by.id(\"USERCOMMENT\")"
+    },
+    "country code": {
+      "locator": "by.id(\"CountryCodeID\")"
+    },
+    "date of birth": {
+      "locator": "by.id(\"DateOfBirth\")"
+    },
+    "description": {
+      "locator": "by.id(\"DESCRIPTION\")"
+    },
+    "division types": {
+      "locator": "by.xpath(\"(//*[@id='OrganizationLevel4ID-classifier-multiselect'])[2]\")"
+    },
+    "email": {
+      "locator": "by.id(\"USEREMAIL\")"
+    },
+    "filter by organization": {
+      "locator": "by.id(\"organization\")"
+    },
+    "filter by status": {
+      "locator": "by.id(\"test-selenium-filter-status\")"
+    },
+    "firm": {
+      "locator": "by.id(\"BailiffFirmID\")"
+    },
+    "first name": {
+      "locator": "by.id(\"FIRSTNAME\")"
+    },
+    "gender": {
+      "locator": "by.id(\"UserGenderID\")"
+    },
+    "grade": {
+      "locator": "by.id(\"Grade\")"
+    },
+    "groups": {
+      "locator": "by.id(\"user_groups\")"
+    },
+    "is auction attendee": {
+      "locator": "by.id(\"IsAuctionAttendee\")"
+    },
+    "is bailiff": {
+      "locator": "by.id(\"IsBailiff\")"
+    },
+    "last name": {
+      "locator": "by.id(\"LASTNAME\")"
+    },
+    "license year": {
+      "locator": "by.id(\"OrganizationLevel4ID-classifier-multiselect\")"
+    },
+    "nid number": {
+      "locator": "by.id(\"USERNID\")"
+    },
+    "organization": {
+      "locator": "by.id(\"user_oragnization\")"
+    },
+    "password": {
+      "locator": "by.id(\"password\")"
+    },
+    "phone": {
+      "locator": "by.id(\"USERPHONE\")"
+    },
+    "reset": {
+      "locator": "by.className(\"test-selenium-reset-user\")"
+    },
+    "save": {
+      "locator": "by.className(\"test-selenium-save-user\")"
+    },
+    "search": {
+      "locator": "by.className(\"test-selenium-search-box\")"
+    },
+    "security question": {
+      "locator": "by.id(\"securityQuestion\")"
+    },
+    "status": {
+      "locator": "by.id(\"status\")"
+    },
+    "table": {
+      "locator": "by.id(\"test-selenium-user-table\")"
+    },
+    "title": {
+      "locator": "by.id(\"Title\")"
+    },
+    "username": {
+      "locator": "by.id(\"LoginName\")"
+    }
+  }
+}
