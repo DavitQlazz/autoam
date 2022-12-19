@@ -1,6 +1,5 @@
-package am.auto.steps;
+package ecase.steps;
 
-import com.codeborne.selenide.ClickOptions;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
@@ -11,6 +10,7 @@ import org.openqa.selenium.By;
 import utils.JsonUtils;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.IntStream;
 
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
@@ -20,10 +20,12 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static java.util.Arrays.asList;
 import static java.util.Collections.reverse;
-import static utils.BaseUtils.closest;
-import static utils.BaseUtils.closestBySelector;
+import static org.openqa.selenium.interactions.WheelInput.ScrollOrigin;
+import static utils.BaseUtils.*;
 
-public class TasksSteps {
+public class WhenSteps {
+
+    private static final List<String> headerButtons = List.of("Save & Close", "Back", "Edit", "Actions");
 
     SelenideElement progressBar = $(".mat-progress-bar-primary.mat-progress-bar-fill.mat-progress-bar-element");
 
@@ -41,18 +43,36 @@ public class TasksSteps {
     }
 
     @And("I click on {string} button")
-    public void iClickOnButton(String arg0) {
-        $(byText(arg0))
-                .scrollIntoView("{block: \"center\"}")
-                .click();
+    public void iClickOnButton(String button) {
+        if (headerButtons.contains(button)) {
+            unHideHeaderButtons();
+            $(byText(button)).click();
+        } else {
+            $(byText(button))
+                    .scrollIntoView("{block: \"center\"}")
+                    .click();
+        }
+
     }
 
     @And("I click on {string} button of the {string}")
     public void iClickOnButtonOfSection(String button, String section) {
-        closest(section, button)
-                .shouldBe(visible, interactable)
-                .hover()
-                .click();
+        if (headerButtons.contains(button)) {
+            unHideHeaderButtons();
+            closestByText(section, button, false).click();
+        } else {
+            closestByText(section, button)
+                    .shouldBe(visible, interactable)
+                    .hover()
+                    .click();
+        }
+    }
+
+    private void unHideHeaderButtons() {
+        Selenide
+                .actions()
+                .scrollFromOrigin(ScrollOrigin.fromViewport(500, 500), 0, -50)
+                .perform();
     }
 
     @And("I click on {string} icon")
@@ -65,15 +85,15 @@ public class TasksSteps {
 
     @And("I wait until the portfolio is opened")
     public void iWaitUntilThePortfolioIsOpened() {
-        Selenide.sleep(2000);
+        sleep(2000);
         System.out.println("debug");
     }
 
 
     @And("I fill {string} value in {string} field of the {string}")
     public void iFillNewCaseNumberValueInTextboxInCaseDe(String value, String child, String parent) {
-        SelenideElement el = closest(parent, child);
-        closest(el, "input")
+        SelenideElement el = closestByText(parent, child);
+        closestByElement(el, "input")
                 .setValue(value)
                 .pressEnter();
         progressBar.shouldBe(appear);
@@ -105,7 +125,7 @@ public class TasksSteps {
                 .get(columnIndex)
                 .shouldNotBe(empty)
                 .shouldBe(visible);
-        Selenide.sleep(2000);
+        sleep(2000);
         cell
                 .hover()
                 .click();
@@ -122,7 +142,6 @@ public class TasksSteps {
     @And("I select the {string} value in {string}")
     public void iSelectTheValueInSearchableComboInDe(String value, String title) {
         closestBySelector(title, "input")
-                .shouldBe(interactable)
                 .setValue(value);
         $(byTagAndText("span", value))
                 .shouldBe(interactable)
@@ -133,11 +152,12 @@ public class TasksSteps {
     public void iSelectBulk(DataTable table) {
         List<List<String>> rows = table.asLists();
         rows.forEach(row -> {
-            closestBySelector(row.get(0), "input").setValue(row.get(1));
-            $(byTagAndText("button /span", row.get(1)))
-                    .shouldBe(visible)
-                    .hover()
-                    .click(ClickOptions.withOffset(0, 0));
+            select(row.get(0), row.get(1));
+//            closestBySelector(row.get(0), "input").setValue(row.get(1));
+//            $(byTagAndText("button /span", row.get(1)))
+//                    .shouldBe(visible)
+//                    .hover()
+//                    .click(ClickOptions.withOffset(0, 0));
         });
     }
 
@@ -148,7 +168,7 @@ public class TasksSteps {
             String title = row.get(0);
             String[] split = row
                     .get(1)
-                    .split("/");
+                    .split(" ");
             closestBySelector(title, ".sis-datepicker__input")
                     .shouldBe(interactable)
                     .click();
@@ -181,13 +201,19 @@ public class TasksSteps {
 
     @And("I wait until the view mode is opened")
     public void iWaitUntilTheViewModeIsOpened() {
+        Selenide.sleep(25000);
+    }
+
+    @And("I wait {int} seconds")
+    public void iWaitSeconds(int sec) {
+        Selenide.sleep(sec * 1000);
     }
 
     @And("The {string} date should be selected as {string}")
     public void theDateShouldBeSelectedAsInDe(String arg0, String arg1) {
     }
 
-    @And("And I fill the following fields to these values:")
+    @And("I fill the following fields to these values:")
     public void iFillAllFields(DataTable table) {
         List<List<String>> rows = table.asLists();
         rows.forEach(row -> {
@@ -208,7 +234,16 @@ public class TasksSteps {
     }
 
     @And("I upload the {string} file in {string} form")
-    public void iUploadTheFileInInDeForm(String arg0, String arg1) {
+    public void iUploadTheFileInInDeForm(String file, String title) {
+        ClassLoader classloader = Thread
+                .currentThread()
+                .getContextClassLoader();
+        String path = Objects
+                .requireNonNull(classloader
+                        .getResource("files/file." + file))
+                .getPath();
+        SelenideElement element = closestBySelector(title, "[type='file']").shouldBe(enabled);
+        element.sendKeys(path);
     }
 
     @And("The {string} value should be appear in {string} textbox")
@@ -223,8 +258,24 @@ public class TasksSteps {
     public void theFollowingValueShouldBeAppearInTextareaInDe(String arg0) {
     }
 
-    @And("The {string} table should be the following")
-    public void theTableShouldBeTheFollowingInCaseDe(String arg0) {
+    @And("The table should be the following:")
+    public void theTableShouldBeTheFollowingInCaseDe(DataTable table) {
+        List<List<String>> rows = table.asLists();
+
+        for (int row = 0; row < rows.size(); row++) {
+            for (int column = 0; column < rows
+                    .get(row)
+                    .size(); column++) {
+                $("table").scrollIntoView(true);
+                $$("tbody tr")
+                        .get(row)
+                        .findAll("td")
+                        .get(column)
+                        .shouldHave(text(rows
+                                .get(row)
+                                .get(column)));
+            }
+        }
     }
 
     @And("The {string} value should be selected in {string} searchable combo")

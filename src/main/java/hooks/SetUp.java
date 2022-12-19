@@ -1,15 +1,15 @@
 package hooks;
 
-import com.codeborne.selenide.Browsers;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.assertj.core.api.SoftAssertions;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import static com.codeborne.selenide.Browsers.*;
+import static com.codeborne.selenide.Browsers.CHROME;
 
 public class SetUp {
 
@@ -24,6 +24,10 @@ public class SetUp {
         caps.setCapability("enableVNC", true);
         caps.setCapability("enableVideo", false);
 
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--no-sandbox");
+        chromeOptions.addArguments("--disable-3d-apis");
+        Configuration.browserCapabilities = chromeOptions;
         Configuration.browser = CHROME;
         Configuration.timeout = 40000;
         Configuration.baseUrl = "https://zimiecms.synisys.com/zwe-dev/login";

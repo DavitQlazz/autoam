@@ -1,6 +1,6 @@
 {
   "icons": {
     "filter": ".test-selenium-filter",
-    "more": ".test-selenium-portfolio-toolbar-more"
+    "more": "#selenium-test--view"
   }
 }

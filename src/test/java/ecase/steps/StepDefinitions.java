@@ -1,4 +1,4 @@
-package am.auto.steps;
+package ecase.steps;
 
 import com.codeborne.selenide.Condition;
 import elements.HomePageElements;

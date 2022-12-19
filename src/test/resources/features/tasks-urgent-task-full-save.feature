@@ -1,7 +1,6 @@
 Feature: Tasks - Full Save functionality for Urgent Task
 
-  Scenario: This scenario creates case by api call, create new Task about Urgent Task,
-  fill all fields, compare data and after all remove case.
+  Scenario Outline: Create new Task about Urgent Task, fill all fields, compare data and after all removing the task.
     When I open the application
     And I login as "Automation user"
     And I click on "My Workspace" button
@@ -15,85 +14,78 @@ Feature: Tasks - Full Save functionality for Urgent Task
     And I select the "Urgent Task" value in "Select Type"
     And I click on "Create" button of the "Create New Task"
 
-    And And I fill the following fields to these values:
+    And I fill the following fields to these values:
       | Description  | Description value  |          |
       | Task Details | Task Details value | textarea |
 
     And And I pick the following date to these fields:
-      | Requested Start Date | 3/JUL/2020 |
-      | Requested End Date   | 4/JUL/2020 |
-      | Actual Start Date    | 3/JUL/2020 |
-      | Date Completed       | 4/JUL/2020 |
+      | Requested Start Date | <date> |
+      | Requested End Date   | <date> |
+      | Actual Start Date    | <date> |
+      | Date Completed       | <date> |
 
     And I select the following values for these fields:
-      | Task Responsibles    | Honourable Mrs Justice Mavangira, JA |
-      | Created on behalf of | Honourable Mrs Justice Mavangira, JA |
+      | Task Responsibles    | Sveta Admin |
+      | Created on behalf of | Sveta Admin |
 
-    And I click on "Tasks/Document/Attach Document" button
-    And I wait until the "Popup/Dialog/Material Dialog" popup window is opened
-    And I fill the "Title Test" value in "Document/Document/Title" textbox
-    And I upload the "seleniumtest.png" file in "Document/Document/Document" form
-    And I upload the "seleniumtest.png" file in "Document/Document/Signed Copy" form
-    And I fill the "Description Test" value in "Document/Document/Description" textarea
-#    And I select the "English" value in "Document/Document/Language" searchable combo
-    And I select the "Affidavit of Service by a Litigant in Person" value in "Document/Document/Document Type"
-    And I click on "Tasks/Document/Add Document" button
-    And I wait until the "Popup/Dialog/Material Dialog" popup window is closed
+    # Task Documents
+    And I click on "Add" button of the "Task Documents"
+    And I fill the following fields to these values:
+      | Title       | Doc title        |          |
+      | Description | Description text | textarea |
 
-    And I click on "Tasks/Document/Attach Signed Copy" button
-    And I wait until the "Popup/Dialog/Material Dialog" popup window is opened
-    And I fill the "Title Test" value in "Document/Document/Title" textbox
-    And I upload the "seleniumtest.png" file in "Document/Document/Document" form
-    And I upload the "seleniumtest.png" file in "Document/Document/Signed Copy" form
-    And I fill the "Description Test" value in "Document/Document/Signed Copy Description" textarea
-#    And I select the "English" value in "Document/Document/Language" searchable combo
-    And I click on "Tasks/Document/Add Signed Copy" button
-    And I wait until the "Popup/Dialog/Material Dialog" popup window is closed
+    And I upload the "png" file in "Document" form
+    And I upload the "png" file in "Signed Copy" form
+    And I select the "Affidavit of Service by a Litigant in Person" value in "Document Type"
+    And I click on "Add" button of the "Task Documents"
 
-    And I scroll to header and click on "Header/Buttons/Save and Close" button
-    And I wait until the view mode is opened
-    And I click on "Navigations/Navigation/Navigation" button
-    And I click on "Navigations/Navigation/Tasks" button
-    And I click on the "Task Number" column of "Urgent Task" name of "Task Type" column in "Portfolio/Portfolio/Table" table
-    And I click on "Header/Buttons/Edit" button
+    #Task Signed Copy
+    And I click on "Add" button of the "Task Signed Copy"
+    And I fill the following fields to these values:
+      | Title       | Signed Doc title        |          |
+      | Description | Signed Description text | textarea |
 
-#    Compare
-    And The "Description Test" value should be appear in "Tasks/General/Description" textbox
-    And The "03 Jul 2020" date should be selected as "Tasks/General/Requested Start Date"
-    And The "04 Jul 2020" date should be selected as "Tasks/General/Requested End Date"
-    And The "03 Jul 2020" date should be selected as "Tasks/General/Actual Start Date"
-    And The "04 Jul 2020" date should be selected as "Tasks/General/Date Completed"
-    And The following values should be selected in "Tasks/General/Task Responsibles" multi select combo
-      | Simona Green |
-    And The following value should be appear in "Tasks/General/Task Details" textarea
-    """
-    Task Details Test
-    """
-    And The "Tasks/Document/Table" table should be the following
-      | Title Test | Description Test |  |
-    And The "Simona Green" value should be selected in "Tasks/General/Created on Behalf of" searchable combo
+    And I upload the "png" file in "Document" form
+    And I upload the "png" file in "Signed Copy" form
+    And I click on "Add" button of the "Task Signed Copy"
+
+    And I click on "Save & Close" button of the "Task"
+    And I wait 5 seconds
+    And I click on "My Workspace" button
+    And I click on "Tasks Created by Me" button
+    And I click on the "1st" item of the "Task Number" column in the "1st" table
+    Then The following values should be displayed accordingly:
+      | Task Type            | Urgent Task        |
+      | Task Sub-Type        | NO DATA            |
+      | Task Details         | Task Details value |
+      | Requested Start Date | <date>             |
+      | Requested End Date   | <date>             |
+      | Actual Start Date    | <date>             |
+      | Date Completed       | <date>             |
+      | Task Responsibles    | Sveta/Admin        |
+      | Task Details         | Task Details value |
+      | Created on behalf of | Sveta Admin        |
+
+    Then The table should be the following:
+      | Doc title | Description text |
+
+    And I click on "Actions" button
+    And I click on "Submit" button
 
 #    Workflow Actions
-    And I scroll to header and click on "Header/Buttons/Save and Close" button
-    And I wait until the view mode is opened
-    And I click on "Workflow/Actions/Actions" button
-    And I click on "Tasks/Actions/Submit" button
-    And I wait until the "Workflow/Actions/Previous State" element is visible
-    And The "Pending" data should be "Workflow/Actions/Current State Name" read only
-    And I click on "Workflow/Actions/Actions" button
-    And I click on "Tasks/Actions/Complete" button
-    And I wait until the "Workflow/Actions/Future State" element is invisible
-    And I wait until the action map is opened
-    And The "Completed" data should be "Workflow/Actions/Current State Name" read only
+    And The "State: Pending" text should be displayed
+    And I click on "Actions" button
+    And I click on "Complete" button
+    And The "State: Completed" text should be displayed
+    And I click on "More" icon
+    And I click on "Delete" button
+    And I click on "Yes" button
+    And The "You have successfully deleted this item." text should be displayed
 
-  Scenario Outline: asd
-    When I click on "<test>" button
-    When I click on "<field>" button
     Examples:
-      | test | field |
-      | asd  | sef   |
-      | sdf  | sdf   |
-      | df   | sdf   |
-      | asd  |       |
-      | asd  |       |
-      | asd  |       |
+      | date        |
+      | 3 JUL 2020  |
+      | 15 JUL 2020 |
+      | 29 JUL 2020 |
+      | 29 JUN 2021 |
+      | 22 JUN 2021 |
