@@ -16,16 +16,6 @@ import static com.codeborne.selenide.Selenide.$$;
 public class BaseUtils {
 
     public static void select(String title, String value) {
-//        $("[title='" + title + "']")
-//                .ancestor("control")
-//                .find(".mat-empty.mat-form-field-empty")
-//                .ancestor("div")
-//                .find("input")
-//                .setValue(value);
-//        $$(".sis-select__item.test-selenium__item")
-//                .filter(text(value))
-//                .first()
-//                .click();
         closestBySelector(title, "input.mat-input-element")
                 .shouldBe(interactable)
                 .setValue(value);
@@ -107,6 +97,7 @@ public class BaseUtils {
             element.shouldBe(visible);
             for (int i = 0; i < 4; i++) {
                 innerElement = element
+                        .should(exist)
                         .$$(secondSelector)
                         .filter(Condition.empty); // TODO filter testing for input fields
                 if (!innerElement.isEmpty() || element.has(tagName("body"))) {

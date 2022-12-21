@@ -84,5 +84,5 @@ Feature: Tasks - Full Save functionality for Urgent Task
     Examples:
       | date        |
       | 3 JUL 2020  |
-      | 15 JUL 2020 |
-      | 29 JUL 2020 |
+#      | 15 JUL 2020 |
+#      | 29 JUL 2020 |

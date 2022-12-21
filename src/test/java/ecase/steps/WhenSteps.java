@@ -155,11 +155,6 @@ public class WhenSteps {
         List<List<String>> rows = table.asLists();
         rows.forEach(row -> {
             select(row.get(0), row.get(1));
-//            closestBySelector(row.get(0), "input").setValue(row.get(1));
-//            $(byTagAndText("button /span", row.get(1)))
-//                    .shouldBe(visible)
-//                    .hover()
-//                    .click(ClickOptions.withOffset(0, 0));
         });
     }
 
