@@ -1,8 +1,8 @@
 Feature: Tasks - Full Save functionality for Urgent Task
 
   Scenario Outline: Create new Task about Urgent Task, fill all fields, compare data and after all removing the task.
-    When I open the application
-    And I login as "Automation user"
+    Given The "https://zimiecms.synisys.com/zwe-dev" page
+    When I log in using "sisautousertest" as the username and "sisAutoUserTest1!" as the password
     And I click on "My Workspace" button
     And I click on "All Cases" button
     And I wait until the portfolio is opened
@@ -11,7 +11,7 @@ Feature: Tasks - Full Save functionality for Urgent Task
     And I click on the "1st" item of the "Case Number" column in the "1st" table
     And I click on "Tasks" button
     And I click on "Create" button of the "Tasks"
-    And I select the "Urgent Task" value in "Select Type"
+    And I select the "Urgent Task" value in the "Select Type" select
     And I click on "Create" button of the "Create New Task"
 
     And I fill the following fields to these values:
@@ -34,9 +34,9 @@ Feature: Tasks - Full Save functionality for Urgent Task
       | Title       | Doc title        |          |
       | Description | Description text | textarea |
 
-    And I upload the "png" file in "Document" form
-    And I upload the "png" file in "Signed Copy" form
-    And I select the "Affidavit of Service by a Litigant in Person" value in "Document Type"
+    And I upload the "png" file as a "Document"
+    And I upload the "png" file as a "Signed Copy"
+    And I select the "Affidavit of Service by a Litigant in Person" value in the "Document Type" select
     And I click on "Add" button of the "Task Documents"
 
     #Task Signed Copy
@@ -45,8 +45,8 @@ Feature: Tasks - Full Save functionality for Urgent Task
       | Title       | Signed Doc title        |          |
       | Description | Signed Description text | textarea |
 
-    And I upload the "png" file in "Document" form
-    And I upload the "png" file in "Signed Copy" form
+    And I upload the "png" file as a "Document"
+    And I upload the "png" file as a "Signed Copy"
     And I click on "Add" button of the "Task Signed Copy"
 
     And I click on "Save & Close" button of the "Task"

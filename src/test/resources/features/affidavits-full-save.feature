@@ -8,11 +8,11 @@ Feature: Tasks - Full Save functionality for Affidavits
     And I wait until the portfolio is opened
     And I click on "Filter" icon
     And I fill "DRAFT" value in "Case Number" field of the "Filter"
-    And I select the "Anna Vardanyan Public" value in "Party"
+    And I select the "Anna Vardanyan Public" value in the "Party" select
     And I click on the "1st" item of the "Case Number" column in the "1st" table
     And I click on "Affidavits" button
     And I click on "Create" text of the "Affidavits"
-    And I select the "Affidavit of Service by a Litigant in Person" value in "Select Type"
+    And I select the "Affidavit of Service by a Litigant in Person" value in the "Select Type" select
     And I click on "Create" button of the "Create New Affidavit"
 
     And I select the following values for these fields:
@@ -37,9 +37,9 @@ Feature: Tasks - Full Save functionality for Affidavits
       | Title       | Doc title        |          |
       | Description | Description text | textarea |
 
-    And I upload the "png" file in "Document" form
-    And I upload the "png" file in "Signed Copy" form
-    And I select the "Affidavit of Service by a Litigant in Person" value in "Document Type"
+    And I upload the "png" file as a "Document"
+    And I upload the "png" file as a "Signed Copy"
+    And I select the "Affidavit of Service by a Litigant in Person" value in the "Document Type" select
     And I click on "Add" button of the "Affidavit Documents"
 
     #Task Signed Copy
@@ -48,8 +48,8 @@ Feature: Tasks - Full Save functionality for Affidavits
       | Title       | Signed Doc title        |          |
       | Description | Signed Description text | textarea |
 
-    And I upload the "png" file in "Document" form
-    And I upload the "png" file in "Signed Copy" form
+    And I upload the "png" file as a "Document"
+    And I upload the "png" file as a "Signed Copy"
     And I click on "Add" button of the "Affidavit Signed Copy"
 
     And I click on "Save & Close" button of the "Affidavit"
@@ -91,7 +91,6 @@ Feature: Tasks - Full Save functionality for Affidavits
     And The "You have successfully deleted this item." text should be displayed
 
     Examples:
-      | date       |
-      | 3 JUL 2020 |
-#      | 15 JUL 2020 |
-#      | 29 JUL 2020 |
+      | date        |
+      | 3 JUL 2020  |
+      | 15 JUL 2020 |

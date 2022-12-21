@@ -138,7 +138,7 @@ public class WhenSteps {
     public void iWaitUntilThePopupWindowIsOpenedInDe(String arg0) {
     }
 
-    @And("I select the {string} value in {string}")
+    @And("I select the {string} value in the {string} select")
     public void iSelectTheValueInSearchableComboInDe(String value, String title) {
         SelenideElement input = closestBySelector(title, "input");
         input.click();
@@ -237,7 +237,7 @@ public class WhenSteps {
     public void iFillTheValueInTextareaInDe(String arg0, String arg1) {
     }
 
-    @And("I upload the {string} file in {string} form")
+    @And("I upload the {string} file as a {string}")
     public void iUploadTheFileInInDeForm(String file, String title) {
         ClassLoader classloader = Thread
                 .currentThread()
