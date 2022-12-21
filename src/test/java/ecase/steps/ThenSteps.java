@@ -25,7 +25,7 @@ public class ThenSteps {
         });
     }
 
-    @Then("The {string} text should be displayed")
+    @Then("The {string} text/message should be displayed")
     public void textIsDisplayedAssertion(String text) {
         $(byText(text)).shouldBe(visible);
     }

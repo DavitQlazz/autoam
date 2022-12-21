@@ -5,7 +5,7 @@ import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.When;
+import io.cucumber.java.en.Given;
 import org.openqa.selenium.By;
 import utils.JsonUtils;
 
@@ -29,20 +29,19 @@ public class WhenSteps {
 
     SelenideElement progressBar = $(".mat-progress-bar-primary.mat-progress-bar-fill.mat-progress-bar-element");
 
-    @When("I open the application")
-    public void iOpenTheApplication() {
-        open("https://zimiecms.synisys.com/zwe-dev");
+    @Given("The {string} page")
+    public void navigate(String url) {
+        open(url);
     }
 
-    @And("I login as {string}")
-    public void iLoginAs(String arg0) {
-        System.out.println(arg0);
-        $(By.id("login")).sendKeys("sisautousertest");
-        $(By.id("password")).sendKeys("sisAutoUserTest1!");
+    @And("I log in using {string} as the username and {string} as the password")
+    public void iLoginAs(String username, String password) {
+        $(By.id("login")).sendKeys(username);
+        $(By.id("password")).sendKeys(password);
         $(By.id("submit")).click();
     }
 
-    @And("I click on {string} button")
+    @And("I click on {string} button/element/entity")
     public void iClickOnButton(String button) {
         if (headerButtons.contains(button)) {
             unHideHeaderButtons();
@@ -55,7 +54,7 @@ public class WhenSteps {
 
     }
 
-    @And("I click on {string} button of the {string}")
+    @And("I click on {string} button/text of the {string}( .*)")
     public void iClickOnButtonOfSection(String button, String section) {
         if (headerButtons.contains(button)) {
             unHideHeaderButtons();
@@ -141,9 +140,12 @@ public class WhenSteps {
 
     @And("I select the {string} value in {string}")
     public void iSelectTheValueInSearchableComboInDe(String value, String title) {
-        closestBySelector(title, "input")
-                .setValue(value);
-        $(byTagAndText("span", value))
+        SelenideElement input = closestBySelector(title, "input");
+        input.click();
+        Selenide.sleep(1000);
+        input.sendKeys(value);
+        $$(".mat-menu-item")
+                .find(text(value))
                 .shouldBe(interactable)
                 .click();
     }
@@ -161,7 +163,7 @@ public class WhenSteps {
         });
     }
 
-    @And("And I pick the following date to these fields:")
+    @And("I pick the following date to these fields:")
     public void pickDate(DataTable table) {
         List<List<String>> rows = table.asLists();
         rows.forEach(row -> {
@@ -218,8 +220,10 @@ public class WhenSteps {
         List<List<String>> rows = table.asLists();
         rows.forEach(row -> {
             String type = "input";
-            if (row.get(2) != null) {
-                type = row.get(2);
+            if (row.size() > 2) {
+                if (row.get(2) != null) {
+                    type = row.get(2);
+                }
             }
             closestBySelector(row.get(0), type).setValue(row.get(1));
         });
@@ -246,8 +250,10 @@ public class WhenSteps {
         element.sendKeys(path);
     }
 
-    @And("The {string} value should be appear in {string} textbox")
-    public void theValueShouldBeAppearInTextboxInDe(String arg0, String arg1) {
+    @And("The attached file of {string} should contains the {string} file title")
+    public void checkAttachedFilename(String section, String fileTitle) {
+        closestBy(byText(section), By.cssSelector(".ejustice-single-document a"), true, false)
+                .shouldHave(text(fileTitle));
     }
 
     @And("The following values should be selected in {string} multi select combo")
@@ -261,12 +267,11 @@ public class WhenSteps {
     @And("The table should be the following:")
     public void theTableShouldBeTheFollowingInCaseDe(DataTable table) {
         List<List<String>> rows = table.asLists();
-
+        $("table").scrollIntoView(true);
         for (int row = 0; row < rows.size(); row++) {
             for (int column = 0; column < rows
                     .get(row)
                     .size(); column++) {
-                $("table").scrollIntoView(true);
                 $$("tbody tr")
                         .get(row)
                         .findAll("td")

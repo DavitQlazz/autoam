@@ -18,7 +18,7 @@ Feature: Tasks - Full Save functionality for Urgent Task
       | Description  | Description value  |          |
       | Task Details | Task Details value | textarea |
 
-    And And I pick the following date to these fields:
+    And I pick the following date to these fields:
       | Requested Start Date | <date> |
       | Requested End Date   | <date> |
       | Actual Start Date    | <date> |
@@ -63,7 +63,6 @@ Feature: Tasks - Full Save functionality for Urgent Task
       | Actual Start Date    | <date>             |
       | Date Completed       | <date>             |
       | Task Responsibles    | Sveta/Admin        |
-      | Task Details         | Task Details value |
       | Created on behalf of | Sveta Admin        |
 
     Then The table should be the following:
@@ -73,7 +72,7 @@ Feature: Tasks - Full Save functionality for Urgent Task
     And I click on "Submit" button
 
 #    Workflow Actions
-    And The "State: Pending" text should be displayed
+    And The "State: Pending" message should be displayed
     And I click on "Actions" button
     And I click on "Complete" button
     And The "State: Completed" text should be displayed
@@ -87,5 +86,3 @@ Feature: Tasks - Full Save functionality for Urgent Task
       | 3 JUL 2020  |
       | 15 JUL 2020 |
       | 29 JUL 2020 |
-      | 29 JUN 2021 |
-      | 22 JUN 2021 |
