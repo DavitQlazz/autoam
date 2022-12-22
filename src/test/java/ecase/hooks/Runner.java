@@ -18,12 +18,13 @@ import static io.cucumber.core.options.Constants.GLUE_PROPERTY_NAME;
 
 @Suite
 @IncludeEngines("cucumber")
-@SelectClasspathResource("features/core")
+@SelectClasspathResource("features/core/party")
 @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "ecase")
 public class Runner {
 
     public static final ThreadLocal<SoftAssertions> SOFT =
             ThreadLocal.withInitial(SoftAssertions::new);
+
     @Before
     public static void before(Scenario scenario) {
         System.out.println("Start " + scenario.getName());
