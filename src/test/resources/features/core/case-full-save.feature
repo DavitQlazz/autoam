@@ -47,5 +47,5 @@ Feature: Tasks - Case Full Save
     Examples:
       | text        |
       | 3 JUL 2020  |
-      | 15 JUL 2020 |
-      | 16 JUL 2021 |
+#      | 15 JUL 2020 |
+#      | 16 JUL 2021 |

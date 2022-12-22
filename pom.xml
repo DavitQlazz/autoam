@@ -10,7 +10,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <cucumber.version>7.10.0</cucumber.version>
+        <cucumber.version>7.10.1</cucumber.version>
         <junit-platform.version>5.9.1</junit-platform.version>
     </properties>
 
@@ -37,7 +37,7 @@
         <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
-            <version>6.10.1</version>
+            <version>6.10.3</version>
         </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
@@ -78,6 +78,7 @@
     </dependencies>
 
     <build>
+        <defaultGoal>test</defaultGoal>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

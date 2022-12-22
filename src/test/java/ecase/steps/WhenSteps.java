@@ -180,27 +180,6 @@ public class WhenSteps {
         });
     }
 
-    @And("I wait until the {string} popup window is closed")
-    public void iWaitUntilThePopupWindowIsClosedInDe(String arg0) {
-    }
-
-    @And("I wait until the edit mode is opened")
-    public void iWaitUntilTheEditModeIsOpened() {
-    }
-
-    @And("I set the {string} date as {string}")
-    public void iSetTheDateAsInDe(String arg0, String arg1) {
-    }
-
-    @And("I scroll to header and click on {string} button")
-    public void iScrollToHeaderAndClickOnButtonInDeForm(String arg0) {
-    }
-
-    @And("I wait until the view mode is opened")
-    public void iWaitUntilTheViewModeIsOpened() {
-        Selenide.sleep(25000);
-    }
-
     @And("I wait {int} seconds")
     public void iWaitSeconds(int sec) {
         Selenide.sleep(sec * 1000);
@@ -222,14 +201,6 @@ public class WhenSteps {
             }
             closestBySelector(row.get(0), type).setValue(row.get(1));
         });
-    }
-
-    @And("I select the {string} value in {string} multi select combo")
-    public void iSelectTheValueInMultiSelectComboInDe(String arg0, String arg1) {
-    }
-
-    @And("I fill the {string} value in {string} textarea/textbox")
-    public void iFillTheValueInTextareaInDe(String arg0, String arg1) {
     }
 
     @And("I upload the {string} file as a {string}")
