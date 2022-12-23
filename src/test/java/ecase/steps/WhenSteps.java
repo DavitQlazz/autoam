@@ -39,7 +39,7 @@ public class WhenSteps {
                 .getPath();
     }
 
-    @Given("The {string} page")
+    @Given("the {string} page")
     public void navigate(String url) {
         open(url);
     }
@@ -195,7 +195,7 @@ public class WhenSteps {
         Selenide.sleep(sec * 1000);
     }
 
-    @And("The {string} date should be selected as {string}")
+    @And("the {string} date should be selected as {string}")
     public void theDateShouldBeSelectedAsInDe(String arg0, String arg1) {
     }
 
@@ -226,21 +226,32 @@ public class WhenSteps {
         }
     }
 
-    @And("The attached file of {string} should contains the {string} file title")
+    @And("I upload the following files accordingly:")
+    public void fileUpload(DataTable table) {
+        List<List<String>> rows = table.asLists();
+        rows.forEach(row -> {
+            closestBySelector(row.get(0), "[type='file']")
+                    .shouldHave(sizeGreaterThan(0))
+                    .first()
+                    .sendKeys(getFilePath(row.get(1)));
+        });
+    }
+
+    @And("the attached file of {string} should contains the {string} file title")
     public void checkAttachedFilename(String section, String fileTitle) {
         closestBy(byText(section), By.cssSelector(".ejustice-single-document a"), true, false)
                 .shouldHave(text(fileTitle));
     }
 
-    @And("The following values should be selected in {string} multi select combo")
+    @And("the following values should be selected in {string} multi select combo")
     public void theFollowingValuesShouldBeSelectedInMultiSelectComboInDe(String arg0) {
     }
 
-    @And("The following value should be appear in {string} textarea")
+    @And("the following value should be appear in {string} textarea")
     public void theFollowingValueShouldBeAppearInTextareaInDe(String arg0) {
     }
 
-    @And("The table should be the following:")
+    @And("the table should be the following:")
     public void theTableShouldBeTheFollowingInCaseDe(DataTable table) {
         List<List<String>> rows = table.asLists();
         $("table").scrollIntoView(true);
@@ -259,7 +270,7 @@ public class WhenSteps {
         }
     }
 
-    @And("The {string} value should be selected in {string} searchable combo")
+    @And("the {string} value should be selected in {string} searchable combo")
     public void theValueShouldBeSelectedInSearchableComboInDe(String arg0, String arg1) {
     }
 
@@ -267,7 +278,7 @@ public class WhenSteps {
     public void iWaitUntilTheElementIsVisibleInDeForm(String arg0) {
     }
 
-    @And("The {string} data should be {string} read only")
+    @And("the {string} data should be {string} read only")
     public void theDataShouldBeReadOnlyInDeForm(String arg0, String arg1) {
     }
 

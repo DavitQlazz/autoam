@@ -1,7 +1,7 @@
 Feature: Tasks - Full Save functionality for Urgent Task
 
   Scenario Outline: Create new Task about Urgent Task, fill all fields, compare data and after all removing the task.
-    Given The "https://zimiecms.synisys.com/zwe-dev" page
+    Given the "https://zimiecms.synisys.com/zwe-dev" page
     When I log in using "sisautousertest" as the username and "sisAutoUserTest1!" as the password
     And I click on "My Workspace" button
     And I click on "All Cases" button
@@ -34,11 +34,9 @@ Feature: Tasks - Full Save functionality for Urgent Task
       | Title       | Doc title        |          |
       | Description | Description text | textarea |
 
-    And I upload to "Document" the following 1 files:
-      | 1.png |
-
-    And I upload to "Signed Copy" the following 1 files:
-      | 2 .png |
+    And I upload the following files accordingly:
+      | Document    | 1.png |
+      | Signed Copy | 2.png |
     And I select the "Affidavit of Service by a Litigant in Person" value in the "Document Type" select
     And I click on "Add" button of the "Task Documents"
 
@@ -48,11 +46,9 @@ Feature: Tasks - Full Save functionality for Urgent Task
       | Title       | Signed Doc title        |          |
       | Description | Signed Description text | textarea |
 
-    And I upload to "Document" the following 1 files:
-      | 1.png |
-
-    And I upload to "Signed Copy" the following 1 files:
-      | 2 .png |
+    And I upload the following files accordingly:
+      | Document    | 3.png |
+      | Signed Copy | 4.png |
 
     And I click on "Add" button of the "Task Signed Copy"
 
@@ -61,7 +57,7 @@ Feature: Tasks - Full Save functionality for Urgent Task
     And I click on "My Workspace" button
     And I click on "Tasks Created by Me" button
     And I click on the "1st" item of the "Task Number" column in the "1st" table
-    Then The following values should be displayed accordingly:
+    Then the following values should be displayed accordingly:
       | Task Type            | Urgent Task        |
       | Task Sub-Type        | NO DATA            |
       | Task Details         | Task Details value |
@@ -72,21 +68,21 @@ Feature: Tasks - Full Save functionality for Urgent Task
       | Task Responsibles    | Sveta/Admin        |
       | Created on behalf of | Sveta Admin        |
 
-    Then The table should be the following:
+    Then the table should be the following:
       | Doc title | Description text |
 
     And I click on "Actions" button
     And I click on "Submit" button
 
 #    Workflow Actions
-    And The "State: Pending" message should be displayed
+    And the "State: Pending" message should be displayed
     And I click on "Actions" button
     And I click on "Complete" button
-    And The "State: Completed" text should be displayed
+    And the "State: Completed" text should be displayed
     And I click on "More" icon
     And I click on "Delete" button
     And I click on "Yes" button
-    And The "You have successfully deleted this item." text should be displayed
+    And the "You have successfully deleted this item." text should be displayed
 
     Examples:
       | date        |

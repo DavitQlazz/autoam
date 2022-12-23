@@ -1,7 +1,7 @@
 Feature: Tasks - Full Save functionality for Affidavits
 
   Scenario Outline: Create new Task about Affidavits Task, fill all fields, compare data and after all removing the Affidavits.
-    Given The "https://zimiecms.synisys.com/zwe-dev" page
+    Given the "https://zimiecms.synisys.com/zwe-dev" page
     When I log in using "sisautousertest" as the username and "sisAutoUserTest1!" as the password
     And I click on "My Workspace" button
     And I click on "All Cases" button
@@ -37,11 +37,9 @@ Feature: Tasks - Full Save functionality for Affidavits
       | Title       | Doc title        |          |
       | Description | Description text | textarea |
 
-    And I upload to "Document" the following 1 files:
-      | 1.png |
-
-    And I upload to "Signed Copy" the following 1 files:
-      | 2 .png |
+    And I upload the following files accordingly:
+      | Document    | 1.png |
+      | Signed Copy | 2.png |
 
     And I select the "Affidavit of Service by a Litigant in Person" value in the "Document Type" select
     And I click on "Add" button of the "Affidavit Documents"
@@ -52,11 +50,9 @@ Feature: Tasks - Full Save functionality for Affidavits
       | Title       | Signed Doc title        |          |
       | Description | Signed Description text | textarea |
 
-    And I upload to "Document" the following 1 files:
-      | 3.png |
-
-    And I upload to "Signed Copy" the following 1 files:
-      | 4.png |
+    And I upload the following files accordingly:
+      | Document    | 3.png |
+      | Signed Copy | 4.png |
 
     And I click on "Add" button of the "Affidavit Signed Copy"
 
@@ -64,7 +60,7 @@ Feature: Tasks - Full Save functionality for Affidavits
 
     And I wait 5 seconds
 
-    Then The following values should be displayed accordingly:
+    Then the following values should be displayed accordingly:
       | Title                      | Anna Vardanyan Public                |
       | Party                      | Anna Vardanyan Public                |
       | Related Document Type      | Summon Commencing Action             |
@@ -77,26 +73,26 @@ Feature: Tasks - Full Save functionality for Affidavits
 #      | Date/Time Document Served  | <date>                               | can't check
       | Affidavit Date             | <date>                               |
 
-    Then The table should be the following:
+    Then the table should be the following:
       | Doc title | Description text |
 
-    Then The attached file of "Affidavit Signed Copy" should contains the "Signed Doc title" file title
+    Then the attached file of "Affidavit Signed Copy" should contains the "Signed Doc title" file title
 
     And I click on "Actions" button
     And I click on "Action test1" button
 
 #    Workflow Actions
-    And The "State: Inch State es crtin" text should be displayed
+    And the "State: Inch State es crtin" text should be displayed
     And I click on "Actions" button
     And I click on "Submit" button
-    And The "State: Pending Compliance Check (Z)" text should be displayed
+    And the "State: Pending Compliance Check (Z)" text should be displayed
     And I click on "Actions" button
     And I click on "Compliance Checked" button
-    And The "State: Approved" text should be displayed
+    And the "State: Approved" text should be displayed
     And I click on "More" icon
     And I click on "Delete" button
     And I click on "Yes" button
-    And The "You have successfully deleted this item." text should be displayed
+    And the "You have successfully deleted this item." text should be displayed
 
     Examples:
       | date       |

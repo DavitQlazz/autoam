@@ -16,7 +16,7 @@ import static utils.BaseUtils.closestBy;
 public class ThenSteps {
 
 
-    @Then("The following values should be displayed accordingly:")
+    @Then("the following values should be displayed accordingly:")
     public void insertedValuesAssertion(DataTable table) {
         List<List<String>> rows = table.asLists();
         rows.forEach(row -> {
@@ -25,7 +25,7 @@ public class ThenSteps {
         });
     }
 
-    @Then("The {string} text/message should be displayed")
+    @Then("the {string} text/message should be displayed")
     public void textIsDisplayedAssertion(String text) {
         $(byText(text)).shouldBe(visible);
     }

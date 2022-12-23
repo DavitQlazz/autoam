@@ -1,7 +1,7 @@
 Feature: Tasks - Case Full Save
 
   Scenario Outline: Create new Case
-    Given The "https://k8s-dev8.synisys.com/ecase-court/workspace" page
+    Given the "https://k8s-dev8.synisys.com/ecase-court/workspace" page
     When I log in using "adminuser" as the username and "adminuser1" as the password
     And I click on "Court Cases" button
     And I click on "Cases" button
@@ -39,7 +39,7 @@ Feature: Tasks - Case Full Save
 
     And I click on "Add" button of the "Bench Members"
 
-    Then The table should be the following:
+    Then the table should be the following:
       | Assistant Jane Smith | 3.07.2020 00:00 | 15.07.2020 00:00 | Discharge Reason |
 
     And I wait 12 seconds

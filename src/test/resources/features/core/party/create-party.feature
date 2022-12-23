@@ -1,7 +1,7 @@
 Feature: Party-Creating Individual Party
 
   Scenario Outline:Create new Party, fill all fields, compare data and after removing the task.
-    Given The "https://k8s-dev7.synisys.com/ecase-court" page
+    Given the "https://k8s-dev7.synisys.com/ecase-court" page
     When I log in using "TestTestikyan" as the username and "TestTestikyan1" as the password
     And I click on "Parties" button
     And I click on "Create" button
@@ -56,12 +56,12 @@ Feature: Party-Creating Individual Party
 
     And I click on "Save & Close" button of the "Party"
     And I wait 5 seconds
-    Then The following values should be displayed accordingly:
+    Then the following values should be displayed accordingly:
       | First Name                     | First Name Test               |
       | Last Name                      | Last Name Test                |
       | Given Name                     | Given Name Test               |
       | Other Name                     | Other Name Test               |
-#      | National Identification Number | 123456789                     |Extra Space
+      | National Identification Number | 123456789                     |
       | Passport No                    | 987654321                     |
       | Driver License No              | 111111111111                  |
       | Initials                       | Initials value                |
@@ -70,7 +70,7 @@ Feature: Party-Creating Individual Party
       | Primary Email                  | <primary email>               |
       | Secondary Email                | <secondary email>             |
       | Mobile Phone Number            | <phone>                       |
-#      | Home Phone Number              | <phone>                       |Extra Space
+      | Home Phone Number              | <phone>                       |
       | Other Phone Number             | <phone>                       |
       | Business Phone Number          | <phone>                       |
       | Date of Birth                  | 03.07.2017                    |
@@ -86,7 +86,6 @@ Feature: Party-Creating Individual Party
       | Home Phone Number Code         | <code>                        |
       | Business Phone Number Code     | <code>                        |
       | Other Phone Number Code        | <code>                        |
-
 
 
     Examples:

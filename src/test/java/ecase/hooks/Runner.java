@@ -19,6 +19,7 @@ import static io.cucumber.core.options.Constants.GLUE_PROPERTY_NAME;
 @Suite
 @IncludeEngines("cucumber")
 @SelectClasspathResource("features/core/party")
+//@SelectClasspathResource("features/zimi")
 @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "ecase")
 public class Runner {
 
