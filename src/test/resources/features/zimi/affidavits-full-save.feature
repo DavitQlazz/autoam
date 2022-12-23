@@ -37,8 +37,12 @@ Feature: Tasks - Full Save functionality for Affidavits
       | Title       | Doc title        |          |
       | Description | Description text | textarea |
 
-    And I upload the "png" file as a "Document"
-    And I upload the "png" file as a "Signed Copy"
+    And I upload to "Document" the following 1 files:
+      | 1.png |
+
+    And I upload to "Signed Copy" the following 1 files:
+      | 2 .png |
+
     And I select the "Affidavit of Service by a Litigant in Person" value in the "Document Type" select
     And I click on "Add" button of the "Affidavit Documents"
 
@@ -48,8 +52,12 @@ Feature: Tasks - Full Save functionality for Affidavits
       | Title       | Signed Doc title        |          |
       | Description | Signed Description text | textarea |
 
-    And I upload the "png" file as a "Document"
-    And I upload the "png" file as a "Signed Copy"
+    And I upload to "Document" the following 1 files:
+      | 3.png |
+
+    And I upload to "Signed Copy" the following 1 files:
+      | 4.png |
+
     And I click on "Add" button of the "Affidavit Signed Copy"
 
     And I click on "Save & Close" button of the "Affidavit"
@@ -91,6 +99,6 @@ Feature: Tasks - Full Save functionality for Affidavits
     And The "You have successfully deleted this item." text should be displayed
 
     Examples:
-      | date        |
-      | 3 JUL 2020  |
+      | date       |
+      | 3 JUL 2020 |
 #      | 15 JUL 2020 |

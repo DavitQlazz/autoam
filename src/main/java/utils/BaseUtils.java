@@ -17,6 +17,7 @@ public class BaseUtils {
 
     public static void select(String title, String value) {
         closestBySelector(title, "input.mat-input-element")
+                .first()
                 .shouldBe(interactable)
                 .setValue(value);
 
@@ -74,7 +75,7 @@ public class BaseUtils {
         return innerElement.first();
     }
 
-    public static SelenideElement closestBySelector(String firstTextOrSelector, String secondSelector) {
+    public static ElementsCollection closestBySelector(String firstTextOrSelector, String secondSelector) {
         // TODO need optimization
         ElementsCollection originatingCase;
         if (isStartsWithLetter(firstTextOrSelector)) {
@@ -101,13 +102,13 @@ public class BaseUtils {
                         .$$(secondSelector)
                         .filter(Condition.empty); // TODO filter testing for input fields
                 if (!innerElement.isEmpty() || element.has(tagName("body"))) {
-                    return innerElement.first();
+                    return innerElement;
                 }
                 element = element.parent();
             }
         }
         assert innerElement != null;
-        return innerElement.first();
+        return innerElement;
     }
 
     public static SelenideElement closestBy(By firstSelector, By secondSelector, boolean isVisible, boolean isEmpty) {

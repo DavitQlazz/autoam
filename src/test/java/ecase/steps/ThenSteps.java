@@ -20,7 +20,7 @@ public class ThenSteps {
     public void insertedValuesAssertion(DataTable table) {
         List<List<String>> rows = table.asLists();
         rows.forEach(row -> {
-            closestBy(By.cssSelector("[title='" + row.get(0) + "']"), By.cssSelector("label"), true, false)
+            closestBy(By.cssSelector("[title='" + row.get(0) + "']"), By.xpath(".//label | .//span"), true, false)
                     .shouldHave(text(row.get(1)), ofMillis(3000));
         });
     }

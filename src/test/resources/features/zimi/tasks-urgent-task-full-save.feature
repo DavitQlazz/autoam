@@ -34,8 +34,11 @@ Feature: Tasks - Full Save functionality for Urgent Task
       | Title       | Doc title        |          |
       | Description | Description text | textarea |
 
-    And I upload the "png" file as a "Document"
-    And I upload the "png" file as a "Signed Copy"
+    And I upload to "Document" the following 1 files:
+      | 1.png |
+
+    And I upload to "Signed Copy" the following 1 files:
+      | 2 .png |
     And I select the "Affidavit of Service by a Litigant in Person" value in the "Document Type" select
     And I click on "Add" button of the "Task Documents"
 
@@ -45,8 +48,12 @@ Feature: Tasks - Full Save functionality for Urgent Task
       | Title       | Signed Doc title        |          |
       | Description | Signed Description text | textarea |
 
-    And I upload the "png" file as a "Document"
-    And I upload the "png" file as a "Signed Copy"
+    And I upload to "Document" the following 1 files:
+      | 1.png |
+
+    And I upload to "Signed Copy" the following 1 files:
+      | 2 .png |
+
     And I click on "Add" button of the "Task Signed Copy"
 
     And I click on "Save & Close" button of the "Task"

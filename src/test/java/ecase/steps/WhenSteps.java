@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.IntStream;
 
+import static com.codeborne.selenide.CollectionCondition.size;
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byTagAndText;
@@ -28,6 +29,15 @@ public class WhenSteps {
     private static final List<String> headerButtons = List.of("Save & Close", "Back", "Edit", "Actions");
 
     SelenideElement progressBar = $(".mat-progress-bar-primary.mat-progress-bar-fill.mat-progress-bar-element");
+
+    private static String getFilePath(String filename) {
+        ClassLoader classloader = Thread
+                .currentThread()
+                .getContextClassLoader();
+        return Objects
+                .requireNonNull(classloader.getResource("files/" + filename))
+                .getPath();
+    }
 
     @Given("The {string} page")
     public void navigate(String url) {
@@ -88,7 +98,6 @@ public class WhenSteps {
         System.out.println("debug");
     }
 
-
     @And("I fill {string} value in {string} field of the {string}")
     public void iFillNewCaseNumberValueInTextboxInCaseDe(String value, String child, String parent) {
         SelenideElement el = closestByText(parent, child);
@@ -140,7 +149,7 @@ public class WhenSteps {
 
     @And("I select the {string} value in the {string} select")
     public void iSelectTheValueInSearchableComboInDe(String value, String title) {
-        SelenideElement input = closestBySelector(title, "input");
+        SelenideElement input = closestBySelector(title, "input").first();
         input.click();
         Selenide.sleep(1000);
         input.sendKeys(value);
@@ -167,6 +176,7 @@ public class WhenSteps {
                     .get(1)
                     .split(" ");
             closestBySelector(title, ".sis-datepicker__input")
+                    .first()
                     .shouldBe(interactable)
                     .click();
             $(".mat-calendar-arrow")
@@ -199,21 +209,21 @@ public class WhenSteps {
                     type = row.get(2);
                 }
             }
-            closestBySelector(row.get(0), type).setValue(row.get(1));
+            closestBySelector(row.get(0), type)
+                    .first()
+                    .setValue(row.get(1));
         });
     }
 
-    @And("I upload the {string} file as a {string}")
-    public void iUploadTheFileInInDeForm(String file, String title) {
-        ClassLoader classloader = Thread
-                .currentThread()
-                .getContextClassLoader();
-        String path = Objects
-                .requireNonNull(classloader
-                        .getResource("files/file." + file))
-                .getPath();
-        SelenideElement element = closestBySelector(title, "[type='file']").shouldBe(enabled);
-        element.sendKeys(path);
+    @And("I upload to {string} the following {int} file(s):")
+    public void fileUpload(String title, Integer size, DataTable table) {
+        ElementsCollection elements = closestBySelector(title, "[type='file']").shouldHave(size(size));
+        List<String> files = table.asList();
+        for (String file : files) {
+            elements
+                    .get(0)
+                    .sendKeys(getFilePath(file));
+        }
     }
 
     @And("The attached file of {string} should contains the {string} file title")
