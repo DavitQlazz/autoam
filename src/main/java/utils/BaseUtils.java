@@ -15,25 +15,22 @@ import static com.codeborne.selenide.Selenide.$$;
 
 public class BaseUtils {
 
-    public static final String scrollOption = "{block: \"center\"}";
+    public static final String SCROLL_OPTION = "{block: \"center\"}";
+
+    public static By byTitle(String titleName) {
+        return By.cssSelector("[title='" + titleName + "']");
+    }
 
     public static void select(String title, String value) {
         closestByTitleOrSelector(title, "input.mat-input-element")
                 .first()
-                .scrollIntoView(scrollOption)
+                .scrollIntoView(SCROLL_OPTION)
                 .shouldBe(interactable)
                 .setValue(value);
 
         $(byTagAndText("button/span", value))
                 .shouldBe(interactable)
                 .click();
-    }
-
-    public static void fill(String title, String value) {
-        $("[title='" + title + "']")
-                .ancestor("control")
-                .find("input")
-                .setValue(value);
     }
 
     public static void check(String name) {
@@ -82,7 +79,7 @@ public class BaseUtils {
         // TODO need optimization
         ElementsCollection originatingCase;
         if (isStartsWithLetter(firstTextOrSelector)) {
-            ElementsCollection titles = $$("[title='" + firstTextOrSelector + "']");
+            ElementsCollection titles = $$(byTitle(firstTextOrSelector));
             if (!titles.isEmpty()) {
                 originatingCase = titles;
             } else {
@@ -142,15 +139,15 @@ public class BaseUtils {
         throw new NoSuchElementException("No such element: " + firstSelector + " | " + secondSelector);
     }
 
-    public static SelenideElement closestByElement(SelenideElement first, String secondSelector) {
+    public static SelenideElement closestByElement(SelenideElement firstElement, String secondSelector) {
         ElementsCollection innerElement = null;
-        first.shouldBe(visible);
+        firstElement.shouldBe(visible);
         for (int i = 0; i < 4; i++) {
-            innerElement = first.$$(secondSelector);
-            if (innerElement.size() > 0 || first.has(tagName("body"))) {
+            innerElement = firstElement.$$(secondSelector);
+            if (innerElement.size() > 0 || firstElement.has(tagName("body"))) {
                 break;
             }
-            first = first.parent();
+            firstElement = firstElement.parent();
         }
 
         return innerElement.first();

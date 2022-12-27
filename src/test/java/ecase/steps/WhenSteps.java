@@ -28,7 +28,6 @@ import static utils.BaseUtils.*;
 public class WhenSteps {
 
     private static final List<String> headerButtons = List.of("Save & Close", "Back", "Edit", "Actions");
-
     SelenideElement progressBar = $(".mat-progress-bar-primary.mat-progress-bar-fill.mat-progress-bar-element");
     SelenideElement popupContainer = $("mat-dialog-container");
 
@@ -60,7 +59,7 @@ public class WhenSteps {
             $(byText(button)).click();
         } else {
             $(byText(button))
-                    .scrollIntoView(scrollOption)
+                    .scrollIntoView(SCROLL_OPTION)
                     .click();
         }
 
@@ -90,7 +89,7 @@ public class WhenSteps {
     public void iClickOnIcon(String arg0) {
         String selector = JsonUtils.getIcon(arg0, "elements");
         $(selector)
-                .scrollIntoView(scrollOption)
+                .scrollIntoView(SCROLL_OPTION)
                 .click();
     }
 
@@ -141,14 +140,6 @@ public class WhenSteps {
                 .click();
     }
 
-    @And("I wait until the overview is opened")
-    public void iWaitUntilTheOverviewIsOpened() {
-    }
-
-    @And("I wait until the {string} popup window is opened")
-    public void iWaitUntilThePopupWindowIsOpenedInDe(String arg0) {
-    }
-
     @And("I select the {string} value in the {string} select")
     public void iSelectTheValueInSearchableComboInDe(String value, String title) {
         SelenideElement input = closestByTitleOrSelector(title, "input").first();
@@ -195,10 +186,6 @@ public class WhenSteps {
     @And("I wait {int} seconds")
     public void iWaitSeconds(int sec) {
         Selenide.sleep(sec * 1000);
-    }
-
-    @And("the {string} date should be selected as {string}")
-    public void theDateShouldBeSelectedAsInDe(String arg0, String arg1) {
     }
 
     @And("I fill the following fields to these values:")
@@ -262,14 +249,6 @@ public class WhenSteps {
         closestBy(byText(section), By.cssSelector(".ejustice-single-document a"), true, false).shouldHave(text(fileTitle));
     }
 
-    @And("the following values should be selected in {string} multi select combo")
-    public void theFollowingValuesShouldBeSelectedInMultiSelectComboInDe(String arg0) {
-    }
-
-    @And("the following value should be appear in {string} textarea")
-    public void theFollowingValueShouldBeAppearInTextareaInDe(String arg0) {
-    }
-
     @And("the {string} table should be the following:")
     public void theTableShouldBeTheFollowingInCaseDe(String tableName, DataTable table) {
         List<List<String>> rows = table.asLists();
@@ -293,26 +272,6 @@ public class WhenSteps {
     @And("I check the {string} radio button of the {string} table")
     public void iCheckTheRadioButtonOfTheTable(String radio, String table) {
         closestByElement(closestByText(table, radio), "mat-radio-button div").click();
-    }
-
-    @And("the {string} value should be selected in {string} searchable combo")
-    public void theValueShouldBeSelectedInSearchableComboInDe(String arg0, String arg1) {
-    }
-
-    @And("I wait until the {string} element is visible")
-    public void iWaitUntilTheElementIsVisibleInDeForm(String arg0) {
-    }
-
-    @And("the {string} data should be {string} read only")
-    public void theDataShouldBeReadOnlyInDeForm(String arg0, String arg1) {
-    }
-
-    @And("I wait until the {string} element is invisible")
-    public void iWaitUntilTheElementIsInvisibleInDeForm(String arg0) {
-    }
-
-    @And("I wait until the action map is opened")
-    public void iWaitUntilTheActionMapIsOpened() {
     }
 
     @And("I am waiting until the {string} pop-up window appears")
