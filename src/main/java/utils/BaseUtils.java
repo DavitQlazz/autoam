@@ -15,9 +15,12 @@ import static com.codeborne.selenide.Selenide.$$;
 
 public class BaseUtils {
 
+    public static final String scrollOption = "{block: \"center\"}";
+
     public static void select(String title, String value) {
-        closestBySelector(title, "input.mat-input-element")
+        closestByTitleOrSelector(title, "input.mat-input-element")
                 .first()
+                .scrollIntoView(scrollOption)
                 .shouldBe(interactable)
                 .setValue(value);
 
@@ -75,7 +78,7 @@ public class BaseUtils {
         return innerElement.first();
     }
 
-    public static ElementsCollection closestBySelector(String firstTextOrSelector, String secondSelector) {
+    public static ElementsCollection closestByTitleOrSelector(String firstTextOrSelector, String secondSelector) {
         // TODO need optimization
         ElementsCollection originatingCase;
         if (isStartsWithLetter(firstTextOrSelector)) {

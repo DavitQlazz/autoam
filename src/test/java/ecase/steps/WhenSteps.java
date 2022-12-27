@@ -21,6 +21,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static java.util.Arrays.asList;
 import static java.util.Collections.reverse;
+import static org.apache.commons.lang3.StringUtils.stripStart;
 import static org.openqa.selenium.interactions.WheelInput.ScrollOrigin;
 import static utils.BaseUtils.*;
 
@@ -29,6 +30,7 @@ public class WhenSteps {
     private static final List<String> headerButtons = List.of("Save & Close", "Back", "Edit", "Actions");
 
     SelenideElement progressBar = $(".mat-progress-bar-primary.mat-progress-bar-fill.mat-progress-bar-element");
+    SelenideElement popupContainer = $("mat-dialog-container");
 
     private static String getFilePath(String filename) {
         ClassLoader classloader = Thread
@@ -58,13 +60,13 @@ public class WhenSteps {
             $(byText(button)).click();
         } else {
             $(byText(button))
-                    .scrollIntoView("{block: \"center\"}")
+                    .scrollIntoView(scrollOption)
                     .click();
         }
 
     }
 
-    @And("I click on {string} button/text of the {string}( .*)")
+    @And("I click on {string} button/text of the {string}( table)")
     public void iClickOnButtonOfSection(String button, String section) {
         if (headerButtons.contains(button)) {
             unHideHeaderButtons();
@@ -88,7 +90,7 @@ public class WhenSteps {
     public void iClickOnIcon(String arg0) {
         String selector = JsonUtils.getIcon(arg0, "elements");
         $(selector)
-                .scrollIntoView("{block: \"center\"}")
+                .scrollIntoView(scrollOption)
                 .click();
     }
 
@@ -149,7 +151,7 @@ public class WhenSteps {
 
     @And("I select the {string} value in the {string} select")
     public void iSelectTheValueInSearchableComboInDe(String value, String title) {
-        SelenideElement input = closestBySelector(title, "input").first();
+        SelenideElement input = closestByTitleOrSelector(title, "input").first();
         input.click();
         Selenide.sleep(1000);
         input.sendKeys(value);
@@ -175,7 +177,7 @@ public class WhenSteps {
             String[] split = row
                     .get(1)
                     .split(" ");
-            closestBySelector(title, ".sis-datepicker__input")
+            closestByTitleOrSelector(title, ".sis-datepicker__input")
                     .first()
                     .shouldBe(interactable)
                     .click();
@@ -185,7 +187,7 @@ public class WhenSteps {
             List<String> dates = asList(split);
             reverse(dates);
             dates.forEach(d -> {
-                $(byTagAndText("div", d)).click();
+                $(byTagAndText("div", stripStart(d, "0"))).click();
             });
         });
     }
@@ -209,15 +211,33 @@ public class WhenSteps {
                     type = row.get(2);
                 }
             }
-            closestBySelector(row.get(0), type)
+            closestByTitleOrSelector(row.get(0), type)
                     .first()
+                    .setValue(row.get(1));
+        });
+    }
+
+    @And("I fill the following fields of the {string} popup")
+    public void iFillAllFieldsOfArea(String popupTitle, DataTable table) {
+        popupContainer
+                .find(byText(popupTitle))
+                .shouldBe(visible);
+        List<List<String>> rows = table.asLists();
+        rows.forEach(row -> {
+            String type = "input";
+            if (row.size() > 2) {
+                if (row.get(2) != null) {
+                    type = row.get(2);
+                }
+            }
+            closestByElement(popupContainer.find(byText(row.get(0))), type)
                     .setValue(row.get(1));
         });
     }
 
     @And("I upload to {string} the following {int} file(s):")
     public void fileUpload(String title, Integer size, DataTable table) {
-        ElementsCollection elements = closestBySelector(title, "[type='file']").shouldHave(size(size));
+        ElementsCollection elements = closestByTitleOrSelector(title, "[type='file']").shouldHave(size(size));
         List<String> files = table.asList();
         for (String file : files) {
             elements
@@ -230,7 +250,7 @@ public class WhenSteps {
     public void fileUpload(DataTable table) {
         List<List<String>> rows = table.asLists();
         rows.forEach(row -> {
-            closestBySelector(row.get(0), "[type='file']")
+            closestByTitleOrSelector(row.get(0), "[type='file']")
                     .shouldHave(sizeGreaterThan(0))
                     .first()
                     .sendKeys(getFilePath(row.get(1)));
@@ -239,8 +259,7 @@ public class WhenSteps {
 
     @And("the attached file of {string} should contains the {string} file title")
     public void checkAttachedFilename(String section, String fileTitle) {
-        closestBy(byText(section), By.cssSelector(".ejustice-single-document a"), true, false)
-                .shouldHave(text(fileTitle));
+        closestBy(byText(section), By.cssSelector(".ejustice-single-document a"), true, false).shouldHave(text(fileTitle));
     }
 
     @And("the following values should be selected in {string} multi select combo")
@@ -251,15 +270,16 @@ public class WhenSteps {
     public void theFollowingValueShouldBeAppearInTextareaInDe(String arg0) {
     }
 
-    @And("the table should be the following:")
-    public void theTableShouldBeTheFollowingInCaseDe(DataTable table) {
+    @And("the {string} table should be the following:")
+    public void theTableShouldBeTheFollowingInCaseDe(String tableName, DataTable table) {
         List<List<String>> rows = table.asLists();
         $("table").scrollIntoView(true);
         for (int row = 0; row < rows.size(); row++) {
             for (int column = 0; column < rows
                     .get(row)
                     .size(); column++) {
-                $$("tbody tr")
+                closestBy(byText(tableName), By.cssSelector("table"), true, false)
+                        .findAll("tbody tr")
                         .get(row)
                         .findAll("td")
                         .get(column)
@@ -268,6 +288,11 @@ public class WhenSteps {
                                 .get(column)));
             }
         }
+    }
+
+    @And("I check the {string} radio button of the {string} table")
+    public void iCheckTheRadioButtonOfTheTable(String radio, String table) {
+        closestByElement(closestByText(table, radio), "mat-radio-button div").click();
     }
 
     @And("the {string} value should be selected in {string} searchable combo")
@@ -290,4 +315,10 @@ public class WhenSteps {
     public void iWaitUntilTheActionMapIsOpened() {
     }
 
+    @And("I am waiting until the {string} pop-up window appears")
+    public void iAmWaitingUntilThePopUpWindowAppears(String popupTitle) {
+        popupContainer
+                .$(byText(popupTitle))
+                .shouldBe(visible);
+    }
 }
