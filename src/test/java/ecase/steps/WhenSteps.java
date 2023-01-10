@@ -88,7 +88,7 @@ public class WhenSteps {
     @And("I click on {string} icon")
     public void iClickOnIcon(String arg0) {
         String selector = JsonUtils.getIcon(arg0, "elements");
-        $(selector)
+        $x(selector)
                 .scrollIntoView(SCROLL_OPTION)
                 .click();
     }
@@ -170,6 +170,7 @@ public class WhenSteps {
                     .split(" ");
             closestByTitleOrSelector(title, ".sis-datepicker__input")
                     .first()
+                    .scrollIntoView(SCROLL_OPTION)
                     .shouldBe(interactable)
                     .click();
             $(".mat-calendar-arrow")
@@ -185,7 +186,7 @@ public class WhenSteps {
 
     @And("I wait {int} seconds")
     public void iWaitSeconds(int sec) {
-        Selenide.sleep(sec * 1000);
+        Selenide.sleep(sec * 1000L);
     }
 
     @And("I fill the following fields to these values:")

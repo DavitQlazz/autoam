@@ -1,6 +1,6 @@
 {
   "icons": {
-    "filter": ".test-selenium-filter",
-    "more": "#selenium-test--view"
+    "filter": "//button[@class='test-selenium-filter']",
+    "more": "//button[@id='selenium-test-view-three-dot'] | //button[@id='selenium-test-view']"
   }
 }

@@ -39,7 +39,7 @@ Feature: Tasks - Case Full Save
 
     And I click on "Add" button of the "Bench Members"
 
-    Then the table should be the following:
+    Then the "Party Addresses" table should be the following:
       | Assistant Jane Smith | 3.07.2020 00:00 | 15.07.2020 00:00 | Discharge Reason |
 
     And I wait 12 seconds

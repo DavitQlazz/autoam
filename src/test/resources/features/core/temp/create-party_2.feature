@@ -170,6 +170,9 @@ Feature: Party-Creating Individual Party
     Then the "Related Users" table should be the following:
       | Ann Jane | 05.10.2021 04:00 | ann.mang@synisys.com | 123456789 |
 
+    And I click on "More" icon
+    And I click on "Delete" button
+
 
     Examples:
       | phone     | code           | gender | citizenship | primary email           | secondary email           |

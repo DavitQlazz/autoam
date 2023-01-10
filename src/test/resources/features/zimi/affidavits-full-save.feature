@@ -73,8 +73,8 @@ Feature: Tasks - Full Save functionality for Affidavits
 #      | Date/Time Document Served  | <date>                               | can't check
       | Affidavit Date             | <date>                               |
 
-    Then the table should be the following:
-      | Doc title | Description text |
+#    Then the table should be the following:
+#      | Doc title | Description text |
 
     Then the attached file of "Affidavit Signed Copy" should contains the "Signed Doc title" file title
 

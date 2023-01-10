@@ -6,11 +6,9 @@ import org.openqa.selenium.By;
 
 import java.util.List;
 
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
-import static java.time.Duration.ofMillis;
 import static utils.BaseUtils.byTitle;
 import static utils.BaseUtils.closestBy;
 
@@ -21,8 +19,10 @@ public class ThenSteps {
     public void insertedValuesAssertion(DataTable table) {
         List<List<String>> rows = table.asLists();
         rows.forEach(row -> {
+            // Find label or span
             closestBy(byTitle(row.get(0)), By.xpath(".//label | .//span"), true, false)
-                    .shouldHave(text(row.get(1)), ofMillis(3000));
+                    .shouldBe(exist)
+                    .shouldHave(text(row.get(1)));
         });
     }
 

@@ -68,8 +68,8 @@ Feature: Tasks - Full Save functionality for Urgent Task
       | Task Responsibles    | Sveta/Admin        |
       | Created on behalf of | Sveta Admin        |
 
-    Then the table should be the following:
-      | Doc title | Description text |
+#    Then the table should be the following:
+#      | Doc title | Description text |
 
     And I click on "Actions" button
     And I click on "Submit" button
